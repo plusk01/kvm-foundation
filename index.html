@@ -1,226 +1,481 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>The KVM Foundation</title>
+    <title>Dojo Dev Camp</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
 
     <!-- Le styles -->
-    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
-    <style type="text/css">
-/*      body {
-        padding-top: 60px;
-        padding-bottom: 40px;
-      }*/
-
-      body {
-        background-color: #FAF6DF;
-      }
-
-      .container-narrow {
-        margin: 0 auto;
-        max-width: 1000px;
-      }
-
-      .masthead {
-        margin-bottom: 40px;
-        border-bottom: 1px solid #ddd;
-      }
-
-      .globe {
-        background: url('img/globe-sm.png') no-repeat;
-        background-size: 30px;
-        margin-top: 5px;
-        margin-right: 7px;
-        width: 30px;
-        height: 30px;
-        display: inline;
-        float: left;
-      }
-
-      .nav-custom {
-        list-style: none;
-      }
-
-      .nav-custom > li {
-        padding-top: 8px;
-        padding-bottom: 8px;
-        float: left;
-      }
-
-      .nav-custom > li > a {
-        text-decoration: none;
-        margin-left: 12px;
-        margin-right: 12px;
-      }
-
-      .nav-custom > li:after {
-        content: '|';
-      }
-
-      .nav-custom > li:last-child:after {
-        content: '';
-      }
-
-      .hero-unit {
-/*        -webkit-border-radius: 0;
-        -moz-border-radius: 0;
-        border-radius: 0;*/
-        background-color: #fff;
-        background-image: url('img/hero-bg.png');
-        -webkit-touch-callout: none;
-        -webkit-user-select: none;
-        -khtml-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-        cursor: default;
-      }
-
-      .mission-statement {
-        text-transform: uppercase;
-        font-size: 48px !important;
-      }
-
-      .big {
-        font-size: 40px;
-      }
-
-      .italic-big {
-        font-style: italic;
-        font-size: 38px;
-      }
-
-      .container-insta {
-        width: 225px;
-        margin: 0 auto;
-        text-align: left;
-      }
-
-      .container-insta > img {
-        width: 75px;
-        height: 75px;
-      }
-
-      .container-blog {
-        position: relative;
-        height: 285px;
-      }
-
-      .blogger {
-        position: absolute;
-        bottom: 0;
-        left: 20px;
-      }
-
-      .blogger > img {
-        width: 50px;
-        margin-right: 5px;
-      }
-
-      .blogger > span {
-        text-transform: uppercase;
-      }
-
-    </style>
+    <link rel="stylesheet" type="text/css" href="/assets/css/compiled/site.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/responsive.css">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-      <script src="lib/html5shiv/html5shiv.js"></script>
+      <script src="/assets/js/html5shiv.js"></script>
     <![endif]-->
 
-    <!-- Fav and touch icons -->
-<!--     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="../assets/ico/favicon.png"> -->
-    </head>
-
-    <body>
-        <div class="container-narrow">
-
-            <div class="masthead">
-                <ul class="nav-custom pull-right">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">The Kids</a></li>
-                    <li><a href="#">Donate</a></li>
-                    <li><a href="#">Blog</a></li>
-                </ul>
-
-                <h3><div class="globe"></div>The KVM Foundation</h3>
-            </div>
-
-            <div class="container">
-
-                <div class="hero-unit">
-                    <div class="row-fluid">
-                        
-                        <div class="span8">
-                            <div class="faded-bg">
-                                <h1 class="text-center mission-statement">Our Mission</h1>
-                                <h2 class="text-center">changing the <span class="big">world</span> through <span class="italic-big">education</span></h2>
-                            </div>
-                            <br><br>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-primary btn-large">lend a hand</a>
-                            </div>
-                        </div>
-
-                        <div class="span4">
-                            <img src="img/logo.jpg" class="img-circle" />
-                        </div>
-
-                    </div>
-                </div>
-
-                <br>
-
-                <h1 class="text-center">see what we've been up to...</h1>
-
-                <br>
-
-                <div class="row">
-                    <div class="span4 text-center">
-                        <h2>instagram</h2>
-                        <div class="container-insta">
-                            <img src="http://placedog.com/75/75" /><img src="http://placekitten.com/75/75" /><img src="http://placedog.com/75/75" /><img src="http://placekitten.com/75/75" /><img src="http://placedog.com/75/75" /><img src="http://placekitten.com/75/75" /><img src="http://placedog.com/75/75" /><img src="http://placekitten.com/75/75" /><img src="http://placedog.com/75/75" />
-                        </div>
-                    </div>
-
-                    <div class="span4 text-center container-blog">
-                        <h2>latest blog post</h2>
-                        <br>
-                        <h3>India: A land of opening doors</h3>
-                        <div class="blogger">
-                            <img src="img/carly.png" />
-                            by <span>Carly Landgrave</span>
-                        </div>
-                    </div>
-
-                    <div class="span4">
-                        <h2>twitter</h2>
-                        <p>LATEST TWEETS (github/tweetie)</p>
-                    </div>
-                </div>
-
-                <hr>
-
-                <footer>
-                    <p class="text-center">&copy; The KVM Foundation 2013</p>
-                </footer>
-
-            </div> <!-- /container -->
-
-        </div>
-
         <!-- Le javascript
-        ================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
-        <script src="lib/jquery/jquery-1.10.2.min.js"></script>
-        <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-        
-    </body>
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/assets/js/jquery.min.js" type="text/javascript"></script>
+    <script src="/assets/js/jquery.smooth-scroll.min.js" type="text/javascript"></script>
+    <script src="/assets/js/navigation.min.js" type="text/javascript"></script>
+    <script src="/assets/js/bootstrap.min.js" type="text/javascript"></script>
+    <!-- Typekit fonts -->
+    <script type="text/javascript" src="//use.typekit.net/rcb8fex.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    
+  </head>
+
+  <body data-spy="scroll" data-offset="80" data-target=".navigation-scroll">
+
+<!-- site header -->
+<header class="homepage-banner">
+  <div class="header-container">
+    <div class="header-title">
+      <h1>Join Our Dojo &amp; Become <br> a Coding Ninja.</h1>
+    </div>
+    <div class="header-content"><a href="/apply" class="btn btn-green">Apply Now</a></div>
+  </div>
+  
+  <!-- site nav simple -->
+<div class="simple-nav">
+  <div class="navbar">
+    <div class="container">
+      <div class="nav-container">
+        <a href="#" class="home-link">
+          <div class="nav-icon pull-left">
+            <!-- Some Icon 38px -->
+          </div>
+        </a>
+        <div class="nav-collapse collapse">
+          <ul class="nav pull-right">
+            <li><a href="#program">Program</a></li>
+<li><a href="#tuition">Tuition</a></li>
+<li><a href="#team">Team</a></li>
+<li><a href="#faq">FAQ</a></li>
+<li><a href="#contact">Contact</a></li>
+<li><a href="/blog">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /site nav simple -->
+</header>
+<!-- /site header -->
+
+<!-- site nav fixed -->
+<nav class="nav-hide navigation-scroll">
+  <div class="navbar">
+    <div class="container">
+      <div class="nav-container">
+        <a href="#" class="home-link">
+          <div class="nav-icon pull-left">
+            <!-- Some Icon 38px -->
+          </div>
+        </a>
+        <div class="nav-collapse collapse">
+          <ul class="nav pull-right">
+            <li><a href="#program">Program</a></li>
+<li><a href="#tuition">Tuition</a></li>
+<li><a href="#team">Team</a></li>
+<li><a href="#faq">FAQ</a></li>
+<li><a href="#contact">Contact</a></li>
+<li><a href="/blog">Blog</a></li>
+            <li><a href="/apply" class="btn-green-basic">Apply Now</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- /site nav fixed -->
+
+<script src="/assets/js/navigation-scroll.js" type="text/javascript"></script>
+
+<!-- BEGIN SITE -->
+
+<!-- overview -->
+<div class="overview">
+  <div class="overview-container">
+    <div class="overview-title">
+      <h2>Dojo Dev Camp is a fully immersive program designed to educate, empower and employ aspiring web developers.</h2>
+    </div>
+    <!-- overview icons -->
+    <div class="overview-icons">
+      <div class="row">
+        <div class="span4"><img src="/assets/img/homepage/icons/timeline/icon-apply.png"></div>
+        <div class="span4"><img src="/assets/img/homepage/icons/timeline/icon-learn.png"></div>
+        <div class="span4"><img src="/assets/img/homepage/icons/timeline/icon-getajob.png"></div>
+      </div>
+    </div>
+    <!-- /overview icons -->
+    <!-- graphic -->
+    <div class="overview-graphic">
+      <img src="/assets/img/homepage/timeline.png">
+    </div>
+    <!-- /graphic -->
+    <!-- overview content -->
+    <div class="overview-content">
+      <div class="row">
+        <div class="span4 content-box">
+          <h3>Apply</h3>
+          <p>We’re looking for talented &amp; driven people who are passionate about technology &amp; code. Upon signing up you will be paired with like-minded people on engaging projects.</p>
+        </div>
+        <div class="span4 content-box">
+          <h3>Learn</h3>
+          <p>Learning to code is a full time endeavor so plan on spending at least 8 hours a day on it. The most successful students enjoy building things so it rarely feels like work.</p>
+        </div>
+        <div class="span4 content-box">
+          <h3>Become a Jr. Developer</h3>
+          <p>Take the course, build your portfolio &amp; network with pros. Plus, if you accept a job from one of our partner companies you’ll be eligible for a $1,000 tuition refund.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /overview content -->
+</div>
+<!-- /overview -->
+
+<!-- our program -->
+  <!-- moved because it's just too big -->
+  <div id="program" class="our-content-large">
+    <!-- our program header -->
+    <header class="program-banner">
+      <div class="header-container">
+        <div class="header-title">
+          <h1>Learn About Our Program</h1>
+        </div>
+        <div class="header-content">
+          <span>We have Judo chopped the excess fat from the code-learning process.</span>
+          <br>
+          <span>Join our lean and robust web development program and see for yourself.</span>
+        </div>
+      </div>
+    </header>
+    <!-- /our program header -->
+
+      
+<!-- team header -->
+<header id="team" class="team-banner">
+  <div class="header-container">
+    <div class="header-title">
+      <h1>Meet the Dojo Team</h1>
+    </div>
+    <div class="header-content">
+      <span>Our mission is to equip this generation with </span>
+      <br>
+      <span>the skills, tools and knowledge needed to do</span> 
+      <br>
+      <span>great things in the tech industry.</span>
+    </div>
+  </div>
+</header>
+<!-- /team header -->
+
+<!-- team list -->
+<div class="team-list">
+  <div class="team-list-container">
+    <!-- row 1 -->
+    <div class="row team-row">
+      <!-- person -->
+      <div class="team-member span4">
+        <div class="photo-box">
+          <img src="/assets/img/temp/team-michael.png">
+          <!-- social links -->
+          <div class="social">
+            <a href="http://linkedin.com/in/michaelzaro">
+              <div class="left">
+                <div class="icon-filler icon-linkedin"></div>
+              </div>
+            </a>
+            <a href="http://twitter.com/michael_zaro">
+              <div class="right">
+                <div class="icon-filler icon-twitter"></div>
+              </div>
+            </a>
+          </div>
+          <!-- /social links -->
+        </div>
+        <div class="about-box">
+          <h3>Michael Zaro</h3>
+          <i>Co-Founder, President</i>
+        </div> 
+      </div>
+      <!-- /person -->
+
+      <!-- person -->
+      <div class="team-member span4">
+        <div class="photo-box">
+          <img src="/assets/img/temp/team-guy.png">
+          <!-- social links -->
+          <div class="social">
+            <a href="http://linkedin.com/in/mguyharding">
+              <div class="left">
+                <div class="icon-filler icon-linkedin"></div>
+              </div>
+            </a>
+            <a href="http://twitter.com/utahguy">
+              <div class="right">
+                <div class="icon-filler icon-twitter"></div>
+              </div>
+            </a>
+          </div>
+          <!-- /social links -->
+        </div>
+        <div class="about-box">
+          <h3>Guy Harding</h3>
+          <i>Co-Founder</i>
+        </div> 
+      </div>
+      <!-- /person -->
+
+      <!-- person -->
+      <div class="team-member span4">
+        <div class="photo-box">
+          <img src="/assets/img/temp/team-sariah.png">
+          <!-- social links -->
+          <div class="social">
+            <a href="http://www.linkedin.com/profile/view?id=114374706&trk=nav_responsive_tab_profile_pic">
+              <div class="left">
+                <div class="icon-filler icon-linkedin"></div>
+              </div>
+            </a>
+            <a href="https://twitter.com/SariahBurdge">
+              <div class="right">
+                <div class="icon-filler icon-twitter"></div>
+              </div>
+            </a>
+          </div>
+          <!-- /social links -->
+        </div>
+        <div class="about-box">
+          <h3>Sariah Masterson</h3>
+          <i>Program Director</i>
+        </div> 
+      </div>
+      <!-- /person -->
+    </div>
+    <!-- /row 1 -->
+
+    <!-- row 2 -->
+    <div class="row team-row">
+      <!-- person -->
+      <div class="team-member span4">
+        <div class="photo-box">
+          <img src="/assets/img/temp/team-daniel.png">
+          <!-- social links -->
+          <div class="social">
+            <a href="https://twitter.com/rooeydaniel">
+              <div class="left">
+                <div class="icon-filler icon-twitter"></div>
+              </div>
+              <div class="right"></div>
+            </a> 
+          </div>
+          <!-- /social links -->
+        </div>
+        <div class="about-box">
+          <h3>Daniel Stephenson</h3>
+          <i>Instructor</i>
+        </div> 
+      </div>
+      <!-- /person -->
+
+      <!-- person -->
+      <div class="team-member span4">
+        <div class="photo-box">
+          <img src="/assets/img/temp/team-garrett.png">
+          <!-- social links -->
+          <div class="social">
+            <a href="http://twitter.com/film42">
+              <div class="left">
+                <div class="icon-filler icon-twitter"></div>
+              </div>
+            </a>
+            <a href="http://github.com/film42">
+              <div class="right">
+                <div class="icon-filler icon-github"></div>
+              </div>
+            </a>
+          </div>
+          <!-- /social links -->
+        </div>
+        <div class="about-box">
+          <h3>Garrett Thornburg</h3>
+          <i>Mentor</i>
+        </div> 
+      </div>
+      <!-- /person -->
+
+      <!-- person -->
+      <div class="team-member span4">
+        <div class="photo-box">
+          <img src="/assets/img/temp/team-dallin.png">
+          <!-- social links -->
+          <div class="social">
+            <a href="http://twitter.com/dallinskinner">
+              <div class="left">
+                <div class="icon-filler icon-twitter"></div>
+              </div>
+            </a>
+            <a href="http://github.com/dallinskinner">
+              <div class="right">
+                <div class="icon-filler icon-github"></div>
+              </div>
+            </a>
+          </div>
+          <!-- /social links -->
+        </div>
+        <div class="about-box">
+          <h3>Dallin Skinner</h3>
+          <i>Mentor</i>
+        </div> 
+      </div>
+      <!-- /person -->
+    </div>
+    <!-- /row 2 -->
+
+    <!-- row 3 -->
+    <div class="row team-row">
+      <!-- person -->
+      <div class="team-member span4">
+        <div class="photo-box">
+          <img src="/assets/img/temp/team-jeff.png">
+          <!-- social links -->
+          <div class="social">
+            <a href="https://twitter.com/nussj">
+              <div class="left">
+                <div class="icon-filler icon-twitter"></div>
+              </div>
+            </a>
+            <a href="https://github.com/jeffnuss">
+              <div class="right">
+                <div class="icon-filler icon-github"></div>
+              </div>
+            </a>
+          </div>
+          <!-- /social links -->
+        </div>
+        <div class="about-box">
+          <h3>Jeff Nuss</h3>
+          <i>Mentor</i>
+        </div> 
+      </div>
+      <!-- /person -->
+    
+      <!-- person -->
+      <div class="team-member span4">
+        <div class="photo-box">
+          <img src="/assets/img/temp/team-julio.png">
+          <!-- social links -->
+          <div class="social">
+            <a href="http://www.linkedin.com/in/juliomenendez/">
+              <div class="left">
+                <div class="icon-filler icon-linkedin"></div>
+              </div>
+            </a>
+            <a href="https://github.com/juliomenendez">
+              <div class="right">
+                <div class="icon-filler icon-github"></div>
+              </div>
+            </a>
+          </div>
+          <!-- /social links -->
+        </div>
+        <div class="about-box">
+          <h3>Julio Menéndez</h3>
+          <i>Mentor</i>
+        </div> 
+      </div>
+      <!-- /person -->
+
+
+      <!-- person -->
+      <div class="team-member span4">
+        <div class="photo-box">
+          <img src="/assets/img/temp/team-mindy.png">
+          <!-- social links -->
+          <div class="social">
+            <a href="http://www.linkedin.com/profile/view?id=102558183&authType=NAME_SEARCH&authToken=jq1s&locale=en_US&srchid=1143747061382547212980&srchindex=1&srchtotal=32&trk=vsrp_people_res_name&trkInfo=VSRPsearchId%3A1143747061382547212980%2CVSRPtargetId%3A102558183%2CVSRPcmpt%3Aprimary">
+              <div class="left">
+                <div class="icon-filler icon-linkedin"></div>
+              </div>
+            </a>
+            <div class="right"></div>
+          </div>
+          <!-- /social links -->
+        </div>
+        <div class="about-box">
+          <h3>Mindy Johnston</h3>
+          <i>Mentor</i>
+        </div> 
+      </div>
+      <!-- /person -->
+    </div>
+    <!-- /row 3 -->    
+
+
+    <!-- row 4 -->
+    <div class="row team-row">
+      <!-- person -->
+      <div class="team-member span4">
+        <div class="photo-box">
+          <img src="/assets/img/temp/team-rob.png">
+          <!-- social links -->
+          <div class="social">
+            <a href="https://twitter.com/robertsoakes">
+              <div class="left">
+                <div class="icon-filler icon-twitter"></div>
+              </div>
+            </a>
+            <div class="right"></div>
+          </div>
+          <!-- /social links -->
+        </div>
+        <div class="about-box">
+          <h3>Rob Oakes</h3>
+          <i>Mentor</i>
+        </div> 
+      </div>
+      <!-- /person -->
+    </div>
+    <!-- /row 4 -->    
+
+
+
+
+  </div>
+</div>
+<!-- /team list -->    
+
+<!-- blog simple -->
+<div class="blog-simple blog-simple-banner">
+  <div class="blog-simple-container">
+    <div class="blog-simple-title">
+      <h2>Blog So Hard</h2>
+    </div>
+    <div class="content-body">
+      <a href="/blog/2014/01/22/state-software-developers-and-innovation-utah-2014/">
+        <div class="row">
+          <div class="span4 content-title">
+            <h3>See Our Most Recent Post:</h3>
+          </div>
+          <div class="span3 content-post">
+            <!-- post title -->
+            <p>Can Utah keep up with the world&#39;s technology? </p>
+            <!-- /post title -->
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+<!-- /blog simple -->
+
+  </body>
+
 </html>
