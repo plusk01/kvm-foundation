@@ -5340,7 +5340,7 @@ header .header-container .header-content span {
 }
 .simple-nav {
   height: 80px;
-  background-color: none;
+  background-color: rgba(0,0,0,.5);
   position: absolute;
   top: 0;
   width: 100%;
@@ -5487,6 +5487,7 @@ nav .nav-container .btn-green-basic:hover {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  height: 1000px;
 }
 .overview {
   background-color: #f5f5fa;
