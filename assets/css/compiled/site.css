@@ -5351,9 +5351,9 @@ header .header-container .header-content span {
   margin-top: 21px;
 }
 .simple-nav .nav-container .nav-icon {
-  width: 72px;
-  height: 38px;
-  background: url(../../img/globals/header-logo.png) no-repeat;
+  width: 80px;
+  height: 41px;
+  background: url(../../../img/logo-head.png) no-repeat;
   opacity: 0.8;
 }
 .simple-nav .nav-container .nav li a {
@@ -5366,6 +5366,7 @@ header .header-container .header-content span {
 }
 .simple-nav .nav-container .nav li a:hover {
   color: #ffffff;
+  text-decoration: underline;
 }
 .simple-nav .nav-container .btn-green-basic {
   margin: 8px 0 0 10px;
@@ -5387,9 +5388,9 @@ nav .nav-container {
   margin-top: 18px;
 }
 nav .nav-container .nav-icon {
-  width: 72px;
-  height: 38px;
-  background: url(../../img/globals/header-logo.png) no-repeat;
+  width: 80px;
+  height: 41px;
+  background: url(../../../img/logo-head.png) no-repeat;
 }
 nav .nav-container .nav > .active > a,
 nav .nav-container .nav > .active > a:hover,
