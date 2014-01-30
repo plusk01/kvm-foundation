@@ -5484,6 +5484,7 @@ nav .nav-container .btn-green-basic:hover {
 }
 .homepage-banner {
   background: url(../../../img/homepage-banner.png) no-repeat top center fixed;
+  background-color: #fdd26a;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
