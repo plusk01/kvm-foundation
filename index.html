@@ -24,11 +24,15 @@
     <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
 
     <script type="text/javascript">
-      jQuery(window).load(resizeBanner);
-      jQuery(window).resize(resizeBanner);
+      jQuery(window).load(resizings);
+      jQuery(window).resize(resizings);
 
-      function resizeBanner() {
+      function resizings() {
+        // resize the banner picture
         $('.homepage-banner').css('height', $(window).height());
+
+        // resize the banner headline
+        // $('.header-container').css('padding-top', 600);
       }
     </script>
     
@@ -40,7 +44,7 @@
 <header class="homepage-banner">
   <div class="header-container row-fluid">
     <div class="header-title span6">
-      <h1>Changing the world through education</h1>
+      <h1>Potential:<br>Who will you become?</h1>
       <div class="header-content"><a href="/apply" class="btn btn-green">Get Involved</a></div>
     </div>
     
@@ -53,8 +57,9 @@
     <div class="container">
       <div class="nav-container">
         <a href="#" class="home-link">
-          <div class="nav-icon pull-left">
-            <!-- Some Icon 38px -->
+          <div class="nav-brand pull-left">
+            <div class="nav-icon"></div>
+            The <strong>KVM</strong> Foundation
           </div>
         </a>
         <div class="nav-collapse collapse">
@@ -78,8 +83,9 @@
     <div class="container">
       <div class="nav-container">
         <a href="#" class="home-link">
-          <div class="nav-icon pull-left">
-            <!-- Some Icon 38px -->
+          <div class="nav-brand pull-left">
+            <div class="nav-icon"></div>
+            The <strong>KVM</strong> Foundation
           </div>
         </a>
         <div class="nav-collapse collapse">
@@ -87,7 +93,7 @@
             <li><a href="#aboutus">About us</a></li>
             <li><a href="javascript:void(0)">Meet the kids</a></li>
             <li><a href="javascript:void(0)">Meet the team</a></li>
-            <li><a href="/donate" class="btn-green-basic">Donate</a></li>
+            <li><a href="/donate" class="btn-green-basic">Get Involved</a></li>
           </ul>
         </div>
       </div>
@@ -107,7 +113,7 @@
       <h2>
         <i>"Give a man a fish and you feed him for a day. Teach a man to fish and you feed him for a lifetime."</i>
         <div class="byline text-center">
-          <span>Our goal is to teach the Indian people how to 'fish.'</span>
+          <span>Our goal is to teach the Indian people how to 'fish'</span>
         </div>
       </h2>
     </div>
@@ -115,41 +121,26 @@
 </div>
 <!-- /sub-header/ QUOTE -->
 
-<!-- 
-  <div id="program" class="our-content-large">
-
-    <header class="program-banner">
-      <div class="header-container">
-        <div class="header-title">
-          <h1>Learn About Our Program</h1>
-        </div>
-        <div class="header-content">
-          <span>We have Judo chopped the excess fat from the code-learning process.</span>
-          <br>
-          <span>Join our lean and robust web development program and see for yourself.</span>
-        </div>
-      </div>
-    </header> -->
-
 <!-- overview -->
 <div id="aboutus" class="overview">
 
   <header class="program-banner">
       <div class="header-container">
         <div class="header-title">
-          <h1>Learn About Our Program</h1>
+          <h1>Learn about our foundation</h1>
         </div>
         <div class="header-content">
-<!--           <span>We have Judo chopped the excess fat from the code-learning process.</span>
           <br>
-          <span>Join our lean and robust web development program and see for yourself.</span> -->
+          <span><strong>K</strong>ala <strong>V</strong>idya <strong>M</strong>arindi</span>
+          <br><br>
+          <span><i>Dream Educate Change</i></span>
         </div>
       </div>
     </header>
 
   <div class="overview-container">
     <div class="overview-title">
-      <h2>Dojo Dev Camp is a fully immersive program designed to educate, empower and employ aspiring web developers.</h2>
+      <h2>KVM is a foundation that helps people live their <strong>dreams</strong> by giving them a valuable tool &mdash; an English <strong>education</strong>, which ultimately will give them the power to <strong>change</strong> their future.</h2>
     </div>
     <!-- overview icons -->
     <div class="overview-icons">
@@ -184,8 +175,45 @@
     </div>
   </div>
   <!-- /overview content -->
+
+<div class="detail-content darkest">
+  <div class="row-fluid">
+    <div class="span6 left-bg-image"></div>
+    <div class="span6">
+      <div class="detail-content-container">
+        <div class="content-header content-title">
+        <h2>WHO DO WE TEACH?</h2>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 <!-- /overview -->
+
+<!-- footer -->
+    <div class="footer">
+      <div class="footer-container">
+        <div class="row">
+          <!-- links -->
+          <div class="links span10">
+            <ul>
+              <li><a href="#aboutus">About us</a></li>
+              <li><a href="javascript:void(0)">Meet the kids</a></li>
+              <li><a href="javascript:void(0)">Meet the team</a></li>
+              <li><a href="/donate" class="btn-green-basic">Get Involved</a></li>
+            </ul>
+          </div>
+          <!-- /links -->
+          <!-- social -->
+<!--           <div class="social span3">
+            <a href="http://www.twitter.com/provodojo"><div class="icon-filler icon-twitter"></div></a>
+            <a href="http://www.facebook.com/startupdojo"><div class="icon-filler icon-facebook"></div></a>
+          </div> -->
+          <!-- /social -->
+        </div>
+      </div>
+    </div>
+    <!-- /footer -->
 
   </body>
 
