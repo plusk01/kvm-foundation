@@ -1,3 +1,47 @@
-body {
-	background-color: #f0eff5;
+html, body {
+	height: 100%;
+}
+
+.wrapper {
+	min-height: 100%;
+	margin-bottom: -93px;
+}
+
+.get-involved {
+	padding-top: 80px;
+}
+
+.get-involved .banner {
+	background: url(/img/get-involved.jpg) no-repeat bottom center fixed;
+	background-position: 50% -220px;
+	height: 360px;
+	background-color: #fafafa;
+}
+
+.get-involved .banner .header-container {
+	padding-top: 1px;
+}
+
+.get-involved .container {
+	padding-top: 30px;
+}
+
+.get-involved .container .col-content {
+	padding-top: 20px;
+	width: 80%;
+	margin: 0 auto;
+	height: 200px;
+}
+
+.get-involved .container .col-btn {
+	width: 80%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.right-vbar {
+	width: 0px; /* Use only border style */
+	height: 320px;
+	float: right; 
+	border: 1px inset; /* This is default border style for <hr> tag */
 }
