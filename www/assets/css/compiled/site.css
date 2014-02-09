@@ -1134,7 +1134,7 @@ textarea.span8,
 input.span7,
 textarea.span7,
 .uneditable-input.span7 {
-  width: 526px;
+  width: 400px;
 }
 input.span6,
 textarea.span6,
@@ -5570,6 +5570,7 @@ nav .nav-container .btn-green-basic:hover {
 
 .overview .detail-content .left-bg-image {
   background: url('../../../img/india.png') no-repeat;
+  background-position: center;
   background-size: 600px;
   height: 700px;
   width: 32%;
@@ -6440,7 +6441,7 @@ nav .nav-container .btn-green-basic:hover {
   background-color: #f5f5fa;
 }
 .application-form .application-form-container {
-  width: 540px;
+  width: 940px;
   margin: 0 auto;
   padding: 90px 0 85px 0;
 }
@@ -6512,19 +6513,19 @@ nav .nav-container .btn-green-basic:hover {
   resize: none;
 }
 .application-form-base .form-split {
-  width: 250px;
+  width: 200px;
 }
 .application-form-base .form-split:last-child {
   margin-left: 40px;
 }
 .application-form-base .form-split input {
-  width: 235px;
+  width: 200px;
 }
 .application-form-base .form-row {
   margin: 20px 0;
 }
 .application-form-base .submit {
-  width: 540px;
+  margin-top: 30px;
   text-align: center;
 }
 .application-form-base .submit .btn-green {
