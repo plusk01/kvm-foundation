@@ -5576,7 +5576,7 @@ nav .nav-container .btn-green-basic:hover {
   background-position: center;
   background-size: 600px;
   height: 700px;
-  width: 32%;
+  /*width: 32%;*/
 }
 .newsletter-banner {
   background-image: url(../../img/homepage/banners/newsletter.png);
