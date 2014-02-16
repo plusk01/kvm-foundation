@@ -610,6 +610,9 @@ a.text-success:focus {
 .text-center {
   text-align: center;
 }
+.text-justify {
+  text-align: justify;
+}
 h1,
 h2,
 h3,
@@ -5235,7 +5238,7 @@ a.badge:focus {
 }
 .btn-green-basic:hover {
   background-color: #24b476 !important;
-  text-decoration: none;
+  text-decoration: none !important;
   opacity: 0.75;
 }
 .btn-white-large {
@@ -5798,56 +5801,24 @@ nav .nav-container .btn-green-basic:hover {
   margin-top: -5px;
   margin-bottom: -5px;
 }
-.get-in-touch {
-  background-color: #f5f5fa;
-}
-.get-in-touch .get-in-touch-container {
-  width: 490px;
+
+.meetteam .meetteam-container {
+  width: 960px;
   margin: 0 auto;
-  padding: 100px 0 75px 0;
+  padding: 90px 0 85px 0;
 }
-.get-in-touch .get-in-touch-title h2 {
-  text-transform: uppercase;
-  font-size: 48px;
-  color: #55555f;
-  text-align: center;
-  font-weight: bolder;
-  margin-bottom: 95px;
+
+.meetteam .meetteam-container .row-member {
+  margin-bottom: 50px;
 }
-.get-in-touch .form input,
-.get-in-touch .form textarea {
-  font-family: "brandon-grotesque", sans-serif;
+
+.meetteam .meetteam-container .row-member p {
   font-size: 18px;
-  font-weight: 200;
-  color: #F2F2FA;
-  background-color: #55555f;
-  border: none;
-  padding: 15px;
-  line-height: 24px;
-  resize: none;
+  line-height: 27px;
+  padding-top: 20px;
+  color: #55555f;
 }
-.get-in-touch .form input::-webkit-input-placeholder,
-.get-in-touch .form textarea::-webkit-input-placeholder {
-  color: #F2F2FA;
-}
-.get-in-touch .form input:-moz-placeholder,
-.get-in-touch .form textarea:-moz-placeholder {
-  color: #F2F2FA;
-}
-.get-in-touch .form input:-ms-input-placeholder,
-.get-in-touch .form textarea:-ms-input-placeholder {
-  color: #F2F2FA;
-}
-.get-in-touch .form .input-small {
-  width: 198px;
-}
-.get-in-touch .form .btn-submit {
-  background-color: #7fc35a;
-  text-transform: uppercase;
-  border-radius: 5px;
-  padding: 7px 50px;
-  width: 476px;
-}
+
 .sub-footer {
   background-color: #8ac868;
 }
@@ -5877,11 +5848,12 @@ nav .nav-container .btn-green-basic:hover {
   text-transform: uppercase;
 }
 .team-banner {
-  background: url(../../img/team/banners/header.png) no-repeat top center fixed;
+  /*background: url(../../img/team/banners/header.png) no-repeat top center fixed;*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  height: 300px !important;
 }
 .team-list .team-list-container {
   width: 940px;

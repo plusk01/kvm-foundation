@@ -33,11 +33,20 @@ html, body {
 	padding-top: 30px;
 }
 
+.get-involved .container .span4,
+.get-involved .container .row {
+	margin-left: 0;
+}
+
 .get-involved .container .col-content {
 	padding-top: 20px;
 	width: 80%;
 	margin: 0 auto;
-	height: 200px;
+	height: 350px;
+}
+
+.get-involved .container .col-content p {
+	text-align: justify;
 }
 
 .get-involved .container .col-btn {
@@ -48,7 +57,7 @@ html, body {
 
 .right-vbar {
 	width: 0px; /* Use only border style */
-	height: 320px;
+	height: 470px;
 	float: right; 
 	border: 1px inset; /* This is default border style for <hr> tag */
 }
