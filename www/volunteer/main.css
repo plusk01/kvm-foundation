@@ -45,6 +45,14 @@ html, body {
 	height: 350px;
 }
 
+.get-involved .vol-container .right-vbar {
+	height: 520px;
+}
+
+.get-involved .vol-container .col-content {
+	height: 400px;
+}
+
 .get-involved .container .col-content p {
 	text-align: justify;
 }
@@ -60,4 +68,19 @@ html, body {
 	height: 470px;
 	float: right; 
 	border: 1px inset; /* This is default border style for <hr> tag */
+}
+
+.information-container {
+	padding-top: 80px;
+}
+
+.information-container .content-container {
+	padding: 20px 200px;
+	font-size: 16px;
+	text-align: justify;
+}
+
+.information-container .content-container li {
+	margin-bottom: 15px;
+	line-height: 23px;
 }
