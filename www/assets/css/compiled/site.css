@@ -5973,9 +5973,9 @@ nav .nav-container .btn-green-basic:hover {
   background-color: #ffffff;
 }
 .detail-content .detail-content-container {
-  width: 940px;
+  /*width: 940px;*/
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px 0 0;
 }
 .detail-content .main-content {
   color: #55555f;
