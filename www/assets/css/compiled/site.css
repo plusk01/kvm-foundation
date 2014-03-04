@@ -5600,6 +5600,10 @@ nav .nav-container .btn-green-basic:hover {
   padding: 90px 0 85px 0;
 }
 
+.thestory p {
+  font-size: 20px !important;
+}
+
 .meetteam .meetteam-container {
   width: 960px;
   margin: 0 auto;
