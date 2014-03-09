@@ -1,0 +1,177 @@
+<div class="application-form">
+    <div class="application-form-container application-form-base">
+        <div class="row">
+            <div class="span6">
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <div class="form-row">
+                        <div class="row">
+                            <div class="span3 form-split">
+                                <label>First Name</label>
+                                <input type="text" ng-model="apply.first_name">
+                            </div>
+
+                            <div class="span3 form-split">
+                                <label>Last Name</label>
+                                <input type="text" ng-model="apply.last_name">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="row">
+                            <div class="span3 form-split">
+                                <label>Date of Birth</label>
+                                <input type="text" ng-model="apply.email">
+                            </div>
+
+                            <div class="span3 form-split">
+                                <label>Gender</label>
+                                <input type="text" ng-model="apply.mobile">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <label>Father's name</label>
+                        <input type="text" class="span7" ng-model="apply.father">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="row">
+                            <div class="span3 form-split">
+                                <label>Email</label>
+                                <input type="text" ng-model="apply.email">
+                            </div>
+
+                            <div class="span3 form-split">
+                                <label>Mobile</label>
+                                <input type="text" ng-model="apply.mobile">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <label>Present Address</label>
+                        <input type="text" class="span7" ng-model="apply.present_address">
+                    </div>
+
+                    <div class="form-row">
+                        <label>Permanent Address <span class="label-details">(Leave blank if the same as above)</span></label>
+                        <input type="text" class="span7" ng-model="apply.permanent_address">
+                    </div>
+
+                </fieldset>
+            </div>
+
+            <div class="span6 offset1">
+                <fieldset>
+                    <legend>Financial Information</legend>
+
+                    <div class="form-row">
+                        <label>Parents' Annual Income</label>
+                        <select class="span4" ng-options="opt.id as opt.name for opt in incomeOptions" ng-model="apply.parents_income"></select>
+                        <span class="select-suffix">Per Annum</span>
+                    </div>
+
+                    <div class="form-row">
+                        <label>Mother's Current Occupation</label>
+                        <input type="text" class="span7" ng-model="apply.mother_job">
+                    </div>
+
+                    <div class="form-row">
+                        <label>Father's Current Occupation</label>
+                        <input type="text" class="span7" ng-model="apply.father_job">
+                    </div>
+
+                    <div class="form-row">
+                        <label>Current Position: <span class="label-details">(Mark all that apply)</span></label>
+                        <div class="inline-checks">
+                            <input type="checkbox" id="chkEmployed" ng-model="employed"><label for="chkEmployed">Employed</label>
+                            <input type="checkbox" id="chkUnemployed"><label for="chkUnemployed">Unemployed</label>
+                            <input type="checkbox" id="chkStudent"><label for="chkStudent">Student</label>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <label kvm-disable="!employed">Current Occupation</label>
+                        <input type="text" class="span7" ng-model="apply.occupation" kvm-disable="!employed">
+                    </div>
+
+                    <div class="form-row">
+                        <label kvm-disable="!employed">Personal Annual Income</label>
+                        <select class="span4" ng-options="opt.id as opt.name for opt in incomeOptions" ng-model="apply.personal_income" kvm-disable="!employed"></select>
+                        <span class="select-suffix" kvm-disable="!employed">Per Annum</span>
+                    </div>
+
+                </fieldset>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="span6">
+                <fieldset>
+                    <legend>Employment</legend>
+
+                    <div class="form-row">
+                        <label class="radio">
+                            <input type="radio" name="employment_status" id="employment_status1" value="1">
+                            <span>Self-Employed</span>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="employment_status" id="employment_status2" value="2">
+                            <span>Employed</span>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="employment_status" id="employment_status3" value="3">
+                            <span>Unemployed &amp; Looking</span>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="employment_status" id="employment_status4" value="4">
+                            <span>Unemployed &amp; Not Looking</span>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="employment_status" id="employment_status5" value="5">
+                            <span>Student</span>
+                        </label>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="row">
+                            <div class="span3 form-split">
+                                <label>Your family's average income</label>
+                                <input class="span3" name="family_income" type="text" value="" placeholder="">
+                            </div>
+
+                            <div class="span3 form-split">
+                                <label>Your personal average income</label>
+                                <input class="span3" name="personal_income" type="text" value="" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+
+                </fieldset>
+            </div>
+
+            <div class="span5 offset1">
+                <fieldset>
+                    <legend>&nbsp;</legend>
+
+                    <div class="form-row">
+                        <label>Why should you be in the KVM English Program?</label>
+                        <textarea rows="9" class="span7" name="reason"></textarea>
+                    </div>
+                </fieldset>
+            </div>
+
+        </div>
+
+        <div class="submit">
+            <button class="btn btn-green" ng-click="submitApplication()">Submit Application</button>
+        </div>
+
+    </div>
+</div>
