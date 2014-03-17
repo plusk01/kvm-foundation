@@ -5346,6 +5346,11 @@ header .header-container .header-content span strong {
   font-size: 28px;
   width: 100%;
 }
+
+.sub-header .main-quote {
+  width: 680px;
+}
+
 .simple-nav {
   height: 80px;
   background-color: rgba(0,0,0,.5);
