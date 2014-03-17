@@ -5669,9 +5669,35 @@ nav .nav-container .btn-green-basic:hover {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  position: relative;
 }
-.program-sub-header-title {
-  width: 660px !important;
+
+.program-banner .sub-title {
+  display: block;
+  margin: auto;
+  line-height: 35px !important;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 1) !important;
+  width: 1000px;
+}
+
+.program-banner .mission-list {
+  width: 710px;
+  margin: auto;
+  padding-left: 200px;
+  text-align: left;
+}
+
+.program-banner .mission-list ul {
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+  text-transform: none;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.program-banner .mission-list ul li {
+  padding: 7px 0 ;
 }
 
 .darkest {
