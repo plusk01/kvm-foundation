@@ -5713,7 +5713,7 @@ nav .nav-container .btn-green-basic:hover {
   background-color: #ffffff;
 }
 .detail-content .detail-content-container {
-  /*width: 940px;*/
+  width: 940px;
   margin: 0 auto;
   padding: 100px 0 0;
 }
@@ -5768,6 +5768,18 @@ nav .nav-container .btn-green-basic:hover {
   height: 62px;
   background: #74737A;
   border-radius: 1000px;
+}
+
+div.quote-block .quote {
+  font-style: italic;
+  font-size: 23px;
+  text-align: justify;
+}
+
+div.quote-block .author {
+  padding-top: 12px;
+  text-align: right;
+  padding-right: 200px;
 }
 
 .application-banner {
