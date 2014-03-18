@@ -49,6 +49,10 @@ input.span7 {
 	width: 440px;
 }
 
+textarea.span12 {
+	width: 1000px;
+}
+
 label span.label-details {
 	font-size: 13px;
 }
