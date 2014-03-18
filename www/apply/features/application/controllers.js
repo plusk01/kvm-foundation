@@ -1,5 +1,24 @@
 'use strict';
 
+/*** Helper Functions ***/
+function getYears(minYear, maxYear) {
+	var years = [];
+	for (var i=maxYear; i>=minYear; i--) years.push(i);
+	return years;
+}
+
+function getDays() {
+	var days = [];
+	for (var i=1; i<=31; i++) days.push(i);
+	return days;
+}
+
+function getMonths() {
+	var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
+	return months;
+}
+
+
 angular.module('kvmApply.directives').directive('kvmDisable', [function(){
 	return {
 		scope: {
@@ -33,6 +52,12 @@ angular.module('kvmApply.controllers').controller('applicationCtrl', function($s
 		{id: 1, name: "hello"},
 		{id: 2, name: "asdf"}
 	];
+
+	var d = new Date();
+	$scope.years = getYears(1950, d.getFullYear() - 14);
+	$scope.days = getDays();
+	$scope.months = getMonths();
+	$scope.genders = ['M', 'F'];
 
 	$scope.submitApplication = function() {
 		console.log("submitting");

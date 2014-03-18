@@ -18,6 +18,10 @@ angular.module('kvmApply', [
 ])
 .config(['$routeProvider', 'RestangularProvider', function($routeProvider, RestangularProvider) {
 	$routeProvider.when('/', {
+		templateUrl: 'features/info/info.html',
+		controller: 'infoCtrl'
+	})
+	.when('/form', {
 		templateUrl: 'features/application/application.html',
 		controller: 'applicationCtrl'
 	})

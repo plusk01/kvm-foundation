@@ -13,6 +13,34 @@ html, body {
 	height: 93px;
 }
 
+/* Info View */
+	
+div.info {
+/*	width: 1000px;
+	margin: auto;*/
+	padding: 80px 0 85px 0;
+}
+
+div.info header.banner {
+	background: url(/img/become-student.jpg) no-repeat top center fixed;
+	background-position: 50% 80px;
+	height: 360px;
+	background-color: #fafafa;
+}
+
+div.info header.banner div.header-container {
+	padding-top: 50px;
+}
+
+div.info-body {
+	width: 1000px;
+	margin: auto;
+	padding-top: 20px;
+}
+	
+
+/* Application View */
+
 input {
 	height: 15px !important;
 }
@@ -49,4 +77,20 @@ div.inline-checks input {
 div.inline-checks label {
 	margin-top: 5px;
 	margin-left: 7px;
+}
+
+
+select.day {
+	width: 54px;
+	font-size: 15px;
+}
+
+select.month {
+	width: 67px;
+	font-size: 15px;
+}
+
+select.year {
+	width: 70px;
+	font-size: 15px;
 }
