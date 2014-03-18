@@ -114,43 +114,102 @@
         <hr>
 
         <div class="row">
+
+            <div class="span12">
+                <fieldset><legend class="text-center main">Education Information</legend></fieldset>
+            </div>
+
             <div class="span6">
                 <fieldset>
-                    <legend>Employment</legend>
+                    <legend class="sub">Primary/Secondary</legend>
 
                     <div class="form-row">
-                        <label class="radio">
-                            <input type="radio" name="employment_status" id="employment_status1" value="1">
-                            <span>Self-Employed</span>
-                        </label>
-                        <label class="radio">
-                            <input type="radio" name="employment_status" id="employment_status2" value="2">
-                            <span>Employed</span>
-                        </label>
-                        <label class="radio">
-                            <input type="radio" name="employment_status" id="employment_status3" value="3">
-                            <span>Unemployed &amp; Looking</span>
-                        </label>
-                        <label class="radio">
-                            <input type="radio" name="employment_status" id="employment_status4" value="4">
-                            <span>Unemployed &amp; Not Looking</span>
-                        </label>
-                        <label class="radio">
-                            <input type="radio" name="employment_status" id="employment_status5" value="5">
-                            <span>Student</span>
-                        </label>
+                        <label>Subjects</label>
+                        <input type="text" class="span7" ng-model="apply.primary_subjects">
+                    </div>
+
+                    <div class="form-row">
+                        <label>School Attended</label>
+                        <input type="text" class="span7" ng-model="apply.primary_school">
+                    </div>
+
+                    <div class="form-row">
+                        <label>Board</label>
+                        <input type="text" class="span7" ng-model="apply.primary_board">
                     </div>
 
                     <div class="form-row">
                         <div class="row">
                             <div class="span3 form-split">
-                                <label>Your family's average income</label>
-                                <input class="span3" name="family_income" type="text" value="" placeholder="">
+                                <label>Medium</label>
+                                <select ng-options="medium for medium in mediums" ng-model="apply.primary_medium"></select>
                             </div>
 
                             <div class="span3 form-split">
-                                <label>Your personal average income</label>
-                                <input class="span3" name="personal_income" type="text" value="" placeholder="">
+                                <label>Percent of Marks Obtained</label>
+                                <input type="text" class="span7" ng-model="apply.primary_marks">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="row">
+                            <div class="span3 form-split">
+                                <label>Division/Class/GPA</label>
+                                <select ng-options="division for division in divisions" ng-model="apply.primary_division"></select>
+                            </div>
+
+                            <div class="span3 form-split">
+                                <label>Year of Passing</label>
+                                <select ng-options="year for year in passingYears" ng-model="apply.primary_passing"></select>
+                            </div>
+                        </div>
+                    </div>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend class="sub">Degree College</legend>
+
+                    <div class="form-row">
+                        <label>Subjects</label>
+                        <input type="text" class="span7" ng-model="apply.primary_subjects">
+                    </div>
+
+                    <div class="form-row">
+                        <label>School Attended</label>
+                        <input type="text" class="span7" ng-model="apply.primary_school">
+                    </div>
+
+                    <div class="form-row">
+                        <label>Board</label>
+                        <input type="text" class="span7" ng-model="apply.primary_board">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="row">
+                            <div class="span3 form-split">
+                                <label>Medium</label>
+                                <select ng-options="medium for medium in mediums" ng-model="apply.primary_medium"></select>
+                            </div>
+
+                            <div class="span3 form-split">
+                                <label>Percent of Marks Obtained</label>
+                                <input type="text" class="span7" ng-model="apply.primary_marks">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="row">
+                            <div class="span3 form-split">
+                                <label>Division/Class/GPA</label>
+                                <select ng-options="division for division in divisions" ng-model="apply.primary_division"></select>
+                            </div>
+
+                            <div class="span3 form-split">
+                                <label>Year of Passing</label>
+                                <select ng-options="year for year in passingYears" ng-model="apply.primary_passing"></select>
                             </div>
                         </div>
                     </div>
@@ -158,14 +217,101 @@
                 </fieldset>
             </div>
 
-            <div class="span5 offset1">
+            <div class="span6 offset1">
                 <fieldset>
-                    <legend>&nbsp;</legend>
+                    <legend class="sub">Intermediate</legend>
 
                     <div class="form-row">
-                        <label>Why should you be in the KVM English Program?</label>
-                        <textarea rows="9" class="span7" name="reason"></textarea>
+                        <label>Subjects</label>
+                        <input type="text" class="span7" ng-model="apply.primary_subjects">
                     </div>
+
+                    <div class="form-row">
+                        <label>School Attended</label>
+                        <input type="text" class="span7" ng-model="apply.primary_school">
+                    </div>
+
+                    <div class="form-row">
+                        <label>Board</label>
+                        <input type="text" class="span7" ng-model="apply.primary_board">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="row">
+                            <div class="span3 form-split">
+                                <label>Medium</label>
+                                <select ng-options="medium for medium in mediums" ng-model="apply.primary_medium"></select>
+                            </div>
+
+                            <div class="span3 form-split">
+                                <label>Percent of Marks Obtained</label>
+                                <input type="text" class="span7" ng-model="apply.primary_marks">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="row">
+                            <div class="span3 form-split">
+                                <label>Division/Class/GPA</label>
+                                <select ng-options="division for division in divisions" ng-model="apply.primary_division"></select>
+                            </div>
+
+                            <div class="span3 form-split">
+                                <label>Year of Passing</label>
+                                <select ng-options="year for year in passingYears" ng-model="apply.primary_passing"></select>
+                            </div>
+                        </div>
+                    </div>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend class="sub">Postgraduate Degree</legend>
+
+                    <div class="form-row">
+                        <label>Subjects</label>
+                        <input type="text" class="span7" ng-model="apply.primary_subjects">
+                    </div>
+
+                    <div class="form-row">
+                        <label>School Attended</label>
+                        <input type="text" class="span7" ng-model="apply.primary_school">
+                    </div>
+
+                    <div class="form-row">
+                        <label>Board</label>
+                        <input type="text" class="span7" ng-model="apply.primary_board">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="row">
+                            <div class="span3 form-split">
+                                <label>Medium</label>
+                                <select ng-options="medium for medium in mediums" ng-model="apply.primary_medium"></select>
+                            </div>
+
+                            <div class="span3 form-split">
+                                <label>Percent of Marks Obtained</label>
+                                <input type="text" class="span7" ng-model="apply.primary_marks">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="row">
+                            <div class="span3 form-split">
+                                <label>Division/Class/GPA</label>
+                                <select ng-options="division for division in divisions" ng-model="apply.primary_division"></select>
+                            </div>
+
+                            <div class="span3 form-split">
+                                <label>Year of Passing</label>
+                                <select ng-options="year for year in passingYears" ng-model="apply.primary_passing"></select>
+                            </div>
+                        </div>
+                    </div>
+
                 </fieldset>
             </div>
 
