@@ -18,6 +18,7 @@ function getMonths() {
 	return months;
 }
 
+/*** Directives ***/
 
 angular.module('kvmApply.directives').directive('kvmDisable', [function(){
 	return {
@@ -47,6 +48,8 @@ angular.module('kvmApply.directives').directive('kvmDisable', [function(){
 	};
 }]);
 
+/*** Controllers ***/
+
 angular.module('kvmApply.controllers').controller('applicationCtrl', function($scope) {
 	$scope.incomeOptions = [
 		{id: 1, name: "hello"},
@@ -62,4 +65,8 @@ angular.module('kvmApply.controllers').controller('applicationCtrl', function($s
 	$scope.submitApplication = function() {
 		console.log("submitting");
 	};
+});
+
+angular.module('kvmApply.controllers').controller('infoCtrl', function($scope) {
+	
 });
