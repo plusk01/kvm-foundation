@@ -52,8 +52,8 @@ angular.module('kvmApply.directives').directive('kvmDisable', [function(){
 
 angular.module('kvmApply.controllers').controller('applicationCtrl', function($scope) {
 	$scope.incomeOptions = [
-		{id: 1, name: "hello"},
-		{id: 2, name: "asdf"}
+		{id: 1, name: "0 - 10,000 Rupees"},
+		{id: 2, name: "10,000 - 20,000 Rupees"}
 	];
 
 	var d = new Date();

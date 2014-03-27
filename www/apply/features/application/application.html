@@ -124,18 +124,8 @@
                     <legend class="sub">Primary/Secondary</legend>
 
                     <div class="form-row">
-                        <label>Subjects</label>
-                        <input type="text" class="span7" ng-model="apply.primary_subjects">
-                    </div>
-
-                    <div class="form-row">
                         <label>School Attended</label>
                         <input type="text" class="span7" ng-model="apply.primary_school">
-                    </div>
-
-                    <div class="form-row">
-                        <label>Board</label>
-                        <input type="text" class="span7" ng-model="apply.primary_board">
                     </div>
 
                     <div class="form-row">
@@ -173,11 +163,11 @@
 
                     <div class="form-row">
                         <label>Subjects</label>
-                        <input type="text" class="span7" ng-model="apply.primary_subjects">
+                        <select ng-options="medium for medium in mediums" ng-model="apply.degree_subjects"></select>
                     </div>
 
                     <div class="form-row">
-                        <label>School Attended</label>
+                        <label>College Attended</label>
                         <input type="text" class="span7" ng-model="apply.primary_school">
                     </div>
 
@@ -227,13 +217,8 @@
                     </div>
 
                     <div class="form-row">
-                        <label>School Attended</label>
+                        <label>College Attended</label>
                         <input type="text" class="span7" ng-model="apply.primary_school">
-                    </div>
-
-                    <div class="form-row">
-                        <label>Board</label>
-                        <input type="text" class="span7" ng-model="apply.primary_board">
                     </div>
 
                     <div class="form-row">
