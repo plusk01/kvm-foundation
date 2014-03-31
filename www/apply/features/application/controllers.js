@@ -50,10 +50,28 @@ angular.module('kvmApply.directives').directive('kvmDisable', [function(){
 
 /*** Controllers ***/
 
-angular.module('kvmApply.controllers').controller('applicationCtrl', function($scope) {
-	$scope.incomeOptions = [
-		{id: 1, name: "0 - 10,000 Rupees"},
-		{id: 2, name: "10,000 - 20,000 Rupees"}
+angular.module('kvmApply.controllers').controller('applicationCtrl', function($scope, Restangular) {
+	$scope.positions = [
+		{id: 'E', name: 'Employed'},
+		{id: 'U', name: 'Unemployed'},
+		{id: 'S', name: 'Student'},
+	];
+
+	$scope.mediums = [ {id: 'E', name: 'English'}, {id: 'T', name: 'Telugu'} ];
+
+	$scope.divisions = [
+		{id: 'D1', name: '1st'},
+		{id: 'D2', name: '2nd'},
+		{id: 'D3', name: '3rd'},
+		{id: 'D4', name: '4th'},
+	];
+
+	$scope.schoolYears = [
+		{id: 'Y1', name: '1st Year'},
+		{id: 'Y2', name: '2nd Year'},
+		{id: 'Y3', name: '3rd Year'},
+		{id: 'Y4', name: '4th Year'},
+		{id: 'Y5', name: '5th Year'},
 	];
 
 	var d = new Date();
@@ -61,9 +79,28 @@ angular.module('kvmApply.controllers').controller('applicationCtrl', function($s
 	$scope.days = getDays();
 	$scope.months = getMonths();
 	$scope.genders = ['M', 'F'];
+	$scope.passingYears = getYears(1950, d.getFullYear())
+
+	Restangular.all('degree-subjects').getList().then(function(data) {
+		$scope.degreeSubjects = data;
+	});
+
+	Restangular.all('postgraduate-subjects').getList().then(function(data) {
+		$scope.postSubjects = data;
+	});
+
+	Restangular.all('incomes').getList().then(function(data) {
+		$scope.incomeOptions = data;
+	});
 
 	$scope.submitApplication = function() {
 		console.log("submitting");
+
+		var application = $scope.apply;
+
+		Restangular.all('applications').customPOST(application).then(function(data) {
+
+		});
 	};
 });
 
