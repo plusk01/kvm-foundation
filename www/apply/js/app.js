@@ -27,5 +27,6 @@ angular.module('kvmApply', [
 	})
 	.otherwise({redirectTo: '/'});
 
-	RestangularProvider.setBaseUrl('http://localhost:8001');
+	// RestangularProvider.setBaseUrl('http://localhost:8001');
+	RestangularProvider.setBaseUrl('http://192.168.1.10:8001');
 }]);

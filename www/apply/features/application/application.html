@@ -119,6 +119,9 @@
                 <fieldset><legend class="text-center main">Education Information</legend></fieldset>
             </div>
 
+        </div>
+
+        <div class="row">
             <div class="span6">
                 <fieldset>
                     <legend class="sub">Primary/Secondary</legend>
@@ -157,7 +160,57 @@
                     </div>
 
                 </fieldset>
+            </div>
 
+            <div class="span6 offset1">
+                <fieldset>
+                    <legend class="sub">Intermediate</legend>
+
+                    <div class="form-row">
+                        <label>Subjects</label>
+                        <input type="text" class="span7" ng-model="apply.intermediate_subjects">
+                    </div>
+
+                    <div class="form-row">
+                        <label>College Attended</label>
+                        <input type="text" class="span7" ng-model="apply.intermediate_college">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="row">
+                            <div class="span3 form-split">
+                                <label>Medium</label>
+                                <select ng-options="medium.id as medium.name for medium in mediums" ng-model="apply.intermediate_medium"></select>
+                            </div>
+
+                            <div class="span3 form-split">
+                                <label>Percent of Marks Obtained</label>
+                                <input type="text" class="span7" ng-model="apply.intermediate_marks">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="row">
+                            <div class="span3 form-split">
+                                <label>Division/Class/GPA</label>
+                                <select ng-options="division.id as division.name for division in divisions" ng-model="apply.intermediate_division"></select>
+                            </div>
+
+                            <div class="span3 form-split">
+                                <label>Year of Passing</label>
+                                <select ng-options="year for year in passingYears" ng-model="apply.intermediate_passing"></select>
+                            </div>
+                        </div>
+                    </div>
+
+                </fieldset>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="span6">
                 <fieldset>
                     <legend class="sub">Degree College</legend>
 
@@ -208,48 +261,7 @@
             </div>
 
             <div class="span6 offset1">
-                <fieldset>
-                    <legend class="sub">Intermediate</legend>
-
-                    <div class="form-row">
-                        <label>Subjects</label>
-                        <input type="text" class="span7" ng-model="apply.intermediate_subjects">
-                    </div>
-
-                    <div class="form-row">
-                        <label>College Attended</label>
-                        <input type="text" class="span7" ng-model="apply.intermediate_college">
-                    </div>
-
-                    <div class="form-row">
-                        <div class="row">
-                            <div class="span3 form-split">
-                                <label>Medium</label>
-                                <select ng-options="medium.id as medium.name for medium in mediums" ng-model="apply.intermediate_medium"></select>
-                            </div>
-
-                            <div class="span3 form-split">
-                                <label>Percent of Marks Obtained</label>
-                                <input type="text" class="span7" ng-model="apply.intermediate_marks">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="form-row">
-                        <div class="row">
-                            <div class="span3 form-split">
-                                <label>Division/Class/GPA</label>
-                                <select ng-options="division.id as division.name for division in divisions" ng-model="apply.intermediate_division"></select>
-                            </div>
-
-                            <div class="span3 form-split">
-                                <label>Year of Passing</label>
-                                <select ng-options="year for year in passingYears" ng-model="apply.intermediate_passing"></select>
-                            </div>
-                        </div>
-                    </div>
-
-                </fieldset>
+                
 
                 <fieldset>
                     <legend class="sub">Postgraduate Degree</legend>
@@ -299,7 +311,6 @@
 
                 </fieldset>
             </div>
-
         </div>
 
         <div class="row">
