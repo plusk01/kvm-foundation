@@ -5793,7 +5793,7 @@ div.quote-block .author {
   background-color: #f5f5fa;
 }
 .application-form .application-form-container {
-  width: 982px;
+  width: 1023px;
   margin: 0 auto;
   padding: 90px 0 85px 0;
 }
@@ -5831,7 +5831,7 @@ div.quote-block .author {
   padding-bottom: 10px;
 }
 .application-form-base legend {
-  color: #8ac868;
+  color: #2CB912;
   text-transform: uppercase;
   font-size: 28px;
   border-bottom: none;
@@ -5845,7 +5845,7 @@ div.quote-block .author {
   font-size: 18px;
   font-weight: 300;
   line-height: 18px;
-  padding: 16px 10px 12px 10px;
+  padding: 12px 10px 12px 10px;
 }
 .application-form-base .line-input {
   padding: 2px 0 2px 0;

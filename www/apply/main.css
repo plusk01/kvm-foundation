@@ -13,42 +13,151 @@ html, body {
 	height: 93px;
 }
 
-.get-involved {
-	padding-top: 80px;
-	padding-bottom: 30px;
+/* Info View */
+	
+div.info {
+/*	width: 1000px;
+	margin: auto;*/
+	padding: 80px 0 85px 0;
 }
 
-.get-involved .banner {
-	background: url(/img/get-involved.jpg) no-repeat bottom center fixed;
-	background-position: 50% -220px;
+div.info header.banner {
+	background: url(/img/become-student.jpg) no-repeat top center fixed;
+	background-position: 50% 80px;
 	height: 360px;
 	background-color: #fafafa;
 }
 
-.get-involved .banner .header-container {
-	padding-top: 1px;
+div.info header.banner div.header-container {
+	padding-top: 50px;
 }
 
-.get-involved .container {
-	padding-top: 30px;
-}
-
-.get-involved .container .col-content {
+div.info-body {
+	width: 1000px;
+	margin: auto;
 	padding-top: 20px;
-	width: 80%;
-	margin: 0 auto;
-	height: 200px;
+}
+	
+
+/* Application View */
+
+input {
+	height: 15px !important;
 }
 
-.get-involved .container .col-btn {
-	width: 80%;
+input.span7 {
+	width: 440px;
+}
+
+textarea.span12 {
+	width: 1000px;
+}
+
+div.long-span12 {
+	width: 1022px;
+}
+
+label span.label-details {
+	font-size: 13px;
+}
+
+select {
+	height: 40px;
+	font-size: 20px;
+}
+
+span.select-suffix {
+	margin-left: 10px;
+}
+
+/** Position checks **/
+div.inline-checks {
+	margin-top: 12px;
+	height: 45px;
+}
+div.inline-checks input,
+div.inline-checks label {
+	float: left;
+}
+div.inline-checks input {
+	margin-left: 40px;
+	margin-top: 7px;
+}
+div.inline-checks label {
+	margin-top: 5px;
+	margin-left: 7px;
+}
+
+/** Declaration Check **/
+div.inline-check input {
+	float: left;
+	margin-right: 11px;
+	margin-top: 2px;
+}
+
+div.inline-check label {
+	float: left;
+	width: 97%;
+}
+
+/** btnGreen **/
+button.btn-green[disabled],
+button.btn-green[disabled]:hover {
+	background-color: #e6e6e6;
+	color: rgb(51, 51, 51);
+	border-bottom-color: #ccc;
+}
+
+button.btn-green[disabled]:active {
+	border-bottom-width: 3px;
+	margin-top: 0;
+}
+
+div.there-were-errors label {
+	font-weight: bold;
 	text-align: center;
-	margin: 0 auto;
+	margin: 20px 0 40px 0;
+	color: rgb(190, 1, 1);
+	font-size: 18px;
 }
 
-.right-vbar {
-	width: 0px; /* Use only border style */
-	height: 320px;
-	float: right; 
-	border: 1px inset; /* This is default border style for <hr> tag */
+
+
+
+select.day {
+	width: 54px;
+	font-size: 15px;
+}
+
+select.month {
+	width: 67px;
+	font-size: 15px;
+}
+
+select.year {
+	width: 70px;
+	font-size: 15px;
+}
+
+legend.main {
+	margin-bottom: 0;
+}
+
+legend.sub {
+	color: black;
+	font-size: 20px;
+	margin-bottom: 5px;
+	text-align: center;
+}
+
+span.error-star {
+	font-size: 25px;
+	vertical-align: middle;
+	line-height: 5px;
+	margin-left: 5px;
+	color: red;
+}
+
+.green-color {
+	color: #2CB912;
 }
