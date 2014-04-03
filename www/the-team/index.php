@@ -204,6 +204,19 @@
             </div>
 
 
+            <div class="row row-member">
+                <div class="span4">
+                    <img src="../img/team/todd.png" class="img-circle" />
+                </div>
+                <div class="span7 offset1">
+                    <h2>TODD SWAIN</h2>
+                    <p>
+                        Todd is a senior at Utah Valley University and will soon graduate with his Bachelor’s in Exercise Science. He plans to become a physician and was recently accepted to medical school.  Todd enjoys anything in the outdoors, especially skiing and whitewater rafting. He also has a great love for traveling and serving others. He has done humanitarian trips serving in orphanages in Mexico, and spent a summer teaching English at a small school in Guatemala.  He is a big believer in the idea behind KVM that education is the greatest way to improve someone’s life.
+                    </p>
+                </div>
+            </div>
+
+
         </div>
     </div>
   <!-- /MEET THE TEAM -->
