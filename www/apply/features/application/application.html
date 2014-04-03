@@ -338,14 +338,18 @@
         <hr>
 
         <div class="row">
-            <div class="span12">
+            <div class="span12 long-span12">
                 <fieldset>
                     <legend class="text-center">Declaration</legend>
- 
-                    <input type="checkbox" id="declaration" ng-model="declared">
-                    <label for="declaration">I hereby declare and certify that all the statements made in this application are true and correct to the best of my knowledge and belief.</label>
+                    <div class="inline-check">
+                        <input type="checkbox" id="declaration" ng-model="declared"><label for="declaration">I hereby declare and certify that all the statements made in this application are true and correct to the best of my knowledge and belief.</label>
+                    </div>
                 </fieldset>
             </div>
+        </div>
+
+        <div class="there-were-errors" ng-show="error">
+            <label>Please review the errors in your application and submit again. Hover over the star (<span class="error-star" tooltip="error information">*</span> ) for more information.</label>
         </div>
 
         <div class="submit">

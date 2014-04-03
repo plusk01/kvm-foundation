@@ -120,7 +120,7 @@ angular.module('kvmApply.directives').directive('kvmError', function($compile){
 
 /*** Controllers ***/
 
-angular.module('kvmApply.controllers').controller('applicationCtrl', function($scope, Restangular) {
+angular.module('kvmApply.controllers').controller('applicationCtrl', function($scope, Restangular, $location) {
 	$scope.positions = [
 		{id: 'E', name: 'Employed'},
 		{id: 'U', name: 'Unemployed'},
@@ -177,7 +177,8 @@ angular.module('kvmApply.controllers').controller('applicationCtrl', function($s
 
 
 		Restangular.all('applications').customPOST(application).then(function(data) {
-
+			// success!
+			$location.path("/thanks");
 		}, function(data) {
 			$scope.error = data.data;
 		});

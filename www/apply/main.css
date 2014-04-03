@@ -53,6 +53,10 @@ textarea.span12 {
 	width: 1000px;
 }
 
+div.long-span12 {
+	width: 1022px;
+}
+
 label span.label-details {
 	font-size: 13px;
 }
@@ -66,6 +70,7 @@ span.select-suffix {
 	margin-left: 10px;
 }
 
+/** Position checks **/
 div.inline-checks {
 	margin-top: 12px;
 	height: 45px;
@@ -82,6 +87,41 @@ div.inline-checks label {
 	margin-top: 5px;
 	margin-left: 7px;
 }
+
+/** Declaration Check **/
+div.inline-check input {
+	float: left;
+	margin-right: 11px;
+	margin-top: 2px;
+}
+
+div.inline-check label {
+	float: left;
+	width: 97%;
+}
+
+/** btnGreen **/
+button.btn-green[disabled],
+button.btn-green[disabled]:hover {
+	background-color: #e6e6e6;
+	color: rgb(51, 51, 51);
+	border-bottom-color: #ccc;
+}
+
+button.btn-green[disabled]:active {
+	border-bottom-width: 3px;
+	margin-top: 0;
+}
+
+div.there-were-errors label {
+	font-weight: bold;
+	text-align: center;
+	margin: 20px 0 40px 0;
+	color: rgb(190, 1, 1);
+	font-size: 18px;
+}
+
+
 
 
 select.day {
@@ -116,4 +156,8 @@ span.error-star {
 	line-height: 5px;
 	margin-left: 5px;
 	color: red;
+}
+
+.green-color {
+	color: #2CB912;
 }
