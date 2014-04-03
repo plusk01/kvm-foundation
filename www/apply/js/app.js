@@ -25,6 +25,10 @@ angular.module('kvmApply', [
 		templateUrl: 'features/application/application.html',
 		controller: 'applicationCtrl'
 	})
+	.when('/thanks', {
+		templateUrl: 'features/thanks/thanks.html',
+		controller: 'thanksCtrl'
+	})
 	.otherwise({redirectTo: '/'});
 
 	// RestangularProvider.setBaseUrl('http://localhost:8001');

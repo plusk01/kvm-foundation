@@ -109,3 +109,11 @@ legend.sub {
 	margin-bottom: 5px;
 	text-align: center;
 }
+
+span.error-star {
+	font-size: 25px;
+	vertical-align: middle;
+	line-height: 5px;
+	margin-left: 5px;
+	color: red;
+}

@@ -62,7 +62,8 @@
   <script src="lib/jquery.color-2.1.2.min.js"></script>
   <script src="js/app.js"></script>
   <script src="features/application/controllers.js"></script>
-  <script src="features/info/info.js"></script>
+  <script src="features/info/controllers.js"></script>
+  <script src="features/thanks/controllers.js"></script>
   </body>
 
 </html>

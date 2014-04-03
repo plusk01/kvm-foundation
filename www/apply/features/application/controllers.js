@@ -14,20 +14,39 @@ function getDays() {
 }
 
 function getMonths() {
-	var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
+	var month_names = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
+	var months = [];
+
+	for (var i=1; i<=12; i++) {
+		var m = {
+			id: i,
+			name: month_names[i - 1]
+		};
+
+		months.push(m);
+	}
 	return months;
+}
+
+function getBirthday(day, month, year) {
+	if (day === undefined || month === undefined || year === undefined) return undefined;
+
+	var m = (month.length !== 2) ? '0' + month : month;
+	var d = (day.length !== 2) ? '0' + day : day;
+	return year + "-" + m + "-" + d;
 }
 
 /*** Directives ***/
 
+/**
+ * kvmDisable directive
+ */
 angular.module('kvmApply.directives').directive('kvmDisable', [function(){
 	return {
-		scope: {
-			disable: '=kvmDisable'
-		},
+		scope: false,
 		restrict: 'A', // E = Element, A = Attribute, C = Class, M = Comment
 		link: function($scope, iElm, iAttrs, controller) {
-			$scope.$watch('disable', function(value) {
+			$scope.$watch(iAttrs.kvmDisable, function(value) {
                 if (value) {
                 	if (iElm[0].tagName === 'INPUT' || iElm[0].tagName === 'SELECT') {
 	                    iElm.animate({backgroundColor:"#E1E1E1"});
@@ -47,6 +66,57 @@ angular.module('kvmApply.directives').directive('kvmDisable', [function(){
 		}
 	};
 }]);
+
+/**
+ * kvmError directive
+ */
+angular.module('kvmApply.directives').directive('kvmError', function($compile){
+	return {
+		scope: false,
+		restrict: 'A',
+		link: function($scope, iElm, iAttrs, controller) {
+			$scope.$watch(iAttrs.kvmError, function(err) {
+				var error_text = (err && err.length > 0) ? err[0] : "No error here!";
+				var star = '<span class="error-star" tooltip="' +  error_text + '">*</span>';
+				var starPos = iElm[0].innerHTML.search(star.substr(0, 19)); // <span class="error-s
+
+				var inputs = ['INPUT', 'SELECT', 'TEXTAREA'];
+
+                if (err) {
+                	// there was an error
+                	if (inputs.indexOf(iElm[0].tagName) > -1) {
+	                    iElm.animate({
+	                    	backgroundColor:"#FFF7F7",
+	                    	borderColor: "#FF0000"
+	                    });
+					} else {
+						// it's a label, so add a star
+
+						// remove it first, so error_text can be reloaded
+						if (starPos !== -1) iElm[0].innerHTML = iElm[0].innerHTML.substr(0, starPos);
+						iElm[0].innerHTML += star;
+
+						// compile for the tooltip
+						$compile(iElm.contents())($scope);
+					}
+
+                } else {
+                	// there was no error
+                	if (inputs.indexOf(iElm[0].tagName) > -1) {
+	                	iElm.animate({
+	                		backgroundColor: "#FFF",
+	                		borderColor: "#CCC"
+	                	});
+					} else {
+						if (starPos > -1) {
+							iElm[0].innerHTML = iElm[0].innerHTML.substr(0, starPos);
+						}
+					}
+                }
+            });
+		}
+	};
+});
 
 /*** Controllers ***/
 
@@ -81,6 +151,9 @@ angular.module('kvmApply.controllers').controller('applicationCtrl', function($s
 	$scope.genders = ['M', 'F'];
 	$scope.passingYears = getYears(1950, d.getFullYear())
 
+	// model init
+	$scope.apply = {};
+
 	Restangular.all('degree-subjects').getList().then(function(data) {
 		$scope.degreeSubjects = data;
 	});
@@ -94,16 +167,19 @@ angular.module('kvmApply.controllers').controller('applicationCtrl', function($s
 	});
 
 	$scope.submitApplication = function() {
-		console.log("submitting");
-
 		var application = $scope.apply;
+
+		/* Birthday format normalization */
+		application.birthday = getBirthday(application.birth_day, application.birth_month, application.birth_year);
+
+		/* position interpretation */
+
+
 
 		Restangular.all('applications').customPOST(application).then(function(data) {
 
+		}, function(data) {
+			$scope.error = data.data;
 		});
 	};
-});
-
-angular.module('kvmApply.controllers').controller('infoCtrl', function($scope) {
-	
 });
