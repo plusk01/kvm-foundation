@@ -31,8 +31,8 @@ function getMonths() {
 function getBirthday(day, month, year) {
 	if (day === undefined || month === undefined || year === undefined) return undefined;
 
-	var m = (month.length !== 2) ? '0' + month : month;
-	var d = (day.length !== 2) ? '0' + day : day;
+	var m = (month.toString().length != 2) ? '0' + month : month;
+	var d = (day.toString().length != 2) ? '0' + day : day;
 	return year + "-" + m + "-" + d;
 }
 
