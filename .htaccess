@@ -5,4 +5,4 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ /www/$1
 RewriteCond %{HTTP_HOST} ^(www.)?kvmfoundation.org$ [NC]
-RewriteRule ^(/)?$ /www/index.html [L]
+RewriteRule ^(/)?$ /www/index.php [L]
