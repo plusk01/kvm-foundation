@@ -132,7 +132,7 @@ angular.module('kvmApply.directives').directive('kvmWordCount', function($compil
 		require: 'ngModel',
 		restrict: 'A', // E = Element, A = Attribute, C = Class, M = Comment
 		link: function($scope, iElm, iAttrs, controller) {
-			var tpl = "<div style='text-align: right;'>Words left: {{wordsRemaining}}</div>";
+			var tpl = "<div style='text-align: right; font-weight: bold;'>Words left: {{wordsRemaining}}</div>";
 			var div = iElm.after(tpl).next();
 			$compile(div)($scope);
 
