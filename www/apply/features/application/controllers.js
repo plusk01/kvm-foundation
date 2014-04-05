@@ -36,6 +36,11 @@ function getBirthday(day, month, year) {
 	return year + "-" + m + "-" + d;
 }
 
+function countWords(s){
+    var matches = s.match(/\S+/g) ;
+	return matches?matches.length:0;
+}
+
 /*** Directives ***/
 
 /**
@@ -117,6 +122,40 @@ angular.module('kvmApply.directives').directive('kvmError', function($compile){
 		}
 	};
 });
+
+/**
+ * kvmWordCount directive
+ */
+angular.module('kvmApply.directives').directive('kvmWordCount', function($compile) {
+	return {
+		scope: true,
+		require: 'ngModel',
+		restrict: 'A', // E = Element, A = Attribute, C = Class, M = Comment
+		link: function($scope, iElm, iAttrs, controller) {
+			var tpl = "<div style='text-align: right;'>Words left: {{wordsRemaining}}</div>";
+			var div = iElm.after(tpl).next();
+			$compile(div)($scope);
+
+			// iElm[0].maxLength = 2;
+
+			$scope.$watch(iAttrs.ngModel, function(newVal) {
+				var wordCount = (iElm[0].value === '') ? 0 : countWords(iElm[0].value);
+
+				var maxWords = iAttrs.kvmWordCount;
+				var wordsRemaining = maxWords - wordCount;
+
+				if (wordsRemaining < 0) {
+					iElm[0].maxLength = 0;
+					$scope.wordsRemaining = 0;
+				} else {
+					$scope.wordsRemaining = wordsRemaining;
+					iElm[0].maxLength = iElm[0].textLength + 100;
+				}
+			});
+		}
+	};
+});
+
 
 /*** Controllers ***/
 
