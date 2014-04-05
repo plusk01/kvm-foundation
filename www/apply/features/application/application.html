@@ -78,12 +78,12 @@
                     </div>
 
                     <div class="form-row">
-                        <label kvm-error="error.mother_job">Mother's Current Occupation</label>
+                        <label kvm-error="error.mother_job">Mother's Current Job</label>
                         <input type="text" class="span7" ng-model="apply.mother_job" kvm-error="error.mother_job">
                     </div>
 
                     <div class="form-row">
-                        <label kvm-error="error.father_job">Father's Current Occupation</label>
+                        <label kvm-error="error.father_job">Father's Current Job</label>
                         <input type="text" class="span7" ng-model="apply.father_job" kvm-error="error.father_job">
                     </div>
 
@@ -97,7 +97,7 @@
                     </div>
 
                     <div class="form-row">
-                        <label kvm-disable="!apply.is_employed" kvm-error="error.occupation">Current Occupation</label>
+                        <label kvm-disable="!apply.is_employed" kvm-error="error.occupation">Current Job</label>
                         <input type="text" class="span7" ng-model="apply.occupation" kvm-disable="!apply.is_employed" kvm-error="error.occupation">
                     </div>
 
@@ -140,7 +140,10 @@
 
                             <div class="span3 form-split">
                                 <label kvm-error="error.primary_marks">Percent of Marks Obtained</label>
-                                <input type="text" class="span7" ng-model="apply.primary_marks" kvm-error="error.primary_marks">
+                                <div class="input-append">
+                                    <input type="text" class="span7" ng-model="apply.primary_marks" kvm-error="error.primary_marks">
+                                    <span class="add-on">%</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -185,7 +188,10 @@
 
                             <div class="span3 form-split">
                                 <label kvm-error="error.intermediate_marks">Percent of Marks Obtained</label>
-                                <input type="text" class="span7" ng-model="apply.intermediate_marks" kvm-error="error.intermediate_marks">
+                                <div class="input-append">
+                                    <input type="text" class="span7" ng-model="apply.intermediate_marks" kvm-error="error.intermediate_marks">
+                                    <span class="add-on">%</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -233,7 +239,10 @@
 
                             <div class="span3 form-split">
                                 <label kvm-error="error.degree_marks">Percent of Marks Obtained</label>
-                                <input type="text" class="span7" ng-model="apply.degree_marks" kvm-error="error.degree_marks">
+                                <div class="input-append">
+                                    <input type="text" class="span7" ng-model="apply.degree_marks" kvm-error="error.degree_marks">
+                                    <span class="add-on">%</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -285,7 +294,10 @@
 
                             <div class="span3 form-split">
                                 <label kvm-error="error.post_marks">Percent of Marks Obtained</label>
-                                <input type="text" class="span7" ng-model="apply.post_marks" kvm-error="error.post_marks">
+                                <div class="input-append">
+                                    <input type="text" class="span7" ng-model="apply.post_marks" kvm-error="error.post_marks">
+                                    <span class="add-on">%</span>
+                                </div>
                             </div>
                         </div>
                     </div>

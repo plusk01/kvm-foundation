@@ -161,3 +161,13 @@ span.error-star {
 .green-color {
 	color: #2CB912;
 }
+
+.input-append .add-on {
+	height: 31px;
+	line-height: 31px;
+	font-size: 18px;
+}
+
+.input-append input {
+	width: 172px !important;
+}
