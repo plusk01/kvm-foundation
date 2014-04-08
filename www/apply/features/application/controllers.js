@@ -134,24 +134,27 @@ angular.module('kvmApply.directives').directive('kvmWordCount', function($compil
 		link: function($scope, iElm, iAttrs, controller) {
 			var tpl = "<div style='text-align: right; font-weight: bold;'>Words left: {{wordsRemaining}}</div>";
 			var div = iElm.after(tpl).next();
+
+			$scope.wordsRemaining = iAttrs.kvmWordCount;
 			$compile(div)($scope);
 
 			// iElm[0].maxLength = 2;
 
-			$scope.$watch(iAttrs.ngModel, function(newVal) {
-				var wordCount = (iElm[0].value === '') ? 0 : countWords(iElm[0].value);
+			// $scope.$watch(iAttrs.ngModel, function(newVal) {
+			// iElm.bind('keydown', function() {
+			// 	var wordCount = (iElm[0].value === '') ? 0 : countWords(iElm[0].value);
 
-				var maxWords = iAttrs.kvmWordCount;
-				var wordsRemaining = maxWords - wordCount;
+			// 	var maxWords = iAttrs.kvmWordCount;
+			// 	var wordsRemaining = maxWords - wordCount;
 
-				if (wordsRemaining < 0) {
-					iElm[0].maxLength = 0;
-					$scope.wordsRemaining = 0;
-				} else {
-					$scope.wordsRemaining = wordsRemaining;
-					iElm[0].maxLength = iElm[0].textLength + 100;
-				}
-			});
+			// 	if (wordsRemaining < 0) {
+			// 		iElm[0].maxLength = 0;
+			// 		$scope.wordsRemaining = 0;
+			// 	} else {
+			// 		$scope.wordsRemaining = wordsRemaining;
+			// 		iElm[0].maxLength = iElm[0].textLength + 100;
+			// 	}
+			// });
 		}
 	};
 });
