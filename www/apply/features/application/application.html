@@ -122,215 +122,31 @@
         </div>
 
         <div class="row">
-            <div class="span6">
-                <fieldset>
-                    <legend class="sub">Primary/Secondary</legend>
+            <div class="span6 offset3">
+                <div class="form-row">
+                    <label kvm-error="error.current_degree">Currently Studying</label>
+                    <select ng-options="degree.id as degree.name for degree in degreeTypes" ng-model="apply.current_degree" kvm-error="error.current_degree" class="span6"></select>
+                </div>
 
-                    <div class="form-row">
-                        <label kvm-error="error.primary_school">School Attended</label>
-                        <input type="text" class="span7" ng-model="apply.primary_school" kvm-error="error.primary_school">
-                    </div>
+                <div class="form-row">
+                    <label kvm-error="error.current_degree_user">Other</label>
+                    <input type="text" class="span7" ng-model="apply.current_degree_user" kvm-error="error.current_degree_user">
+                </div>
 
-                    <div class="form-row">
-                        <div class="row">
-                            <div class="span3 form-split">
-                                <label kvm-error="error.primary_medium">Medium</label>
-                                <select ng-options="medium.id as medium.name for medium in mediums" ng-model="apply.primary_medium" kvm-error="error.primary_medium"></select>
-                            </div>
+                <div class="form-row">
+                    <label kvm-error="error.current_year">Current Year</label>
+                    <select ng-options="year.id as year.name for year in schoolYears" ng-model="apply.current_year" kvm-error="error.current_year" class="span6"></select>
+                </div>
 
-                            <div class="span3 form-split">
-                                <label kvm-error="error.primary_marks">Percent of Marks Obtained</label>
-                                <div class="input-append">
-                                    <input type="text" class="span7" ng-model="apply.primary_marks" kvm-error="error.primary_marks">
-                                    <span class="add-on">%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="form-row">
+                    <label kvm-error="error.current_subjects">Current Subjects</label>
+                    <input type="text" class="span7" ng-model="apply.current_subjects" kvm-error="error.current_subjects">
+                </div>
 
-                    <div class="form-row">
-                        <div class="row">
-                            <div class="span3 form-split">
-                                <label kvm-error="error.primary_division">Division/Class/GPA</label>
-                                <select ng-options="division.id as division.name for division in divisions" ng-model="apply.primary_division" kvm-error="error.primary_division"></select>
-                            </div>
-
-                            <div class="span3 form-split">
-                                <label kvm-error="error.primary_passing">Year of Passing</label>
-                                <select ng-options="year for year in passingYears" ng-model="apply.primary_passing" kvm-error="error.primary_passing"></select>
-                            </div>
-                        </div>
-                    </div>
-
-                </fieldset>
-            </div>
-
-            <div class="span6 offset1">
-                <fieldset>
-                    <legend class="sub">Intermediate</legend>
-
-                    <div class="form-row">
-                        <label kvm-error="error.intermediate_subjects">Subjects</label>
-                        <input type="text" class="span7" ng-model="apply.intermediate_subjects" kvm-error="error.intermediate_subjects">
-                    </div>
-
-                    <div class="form-row">
-                        <label kvm-error="error.intermediate_college">College Attended</label>
-                        <input type="text" class="span7" ng-model="apply.intermediate_college" kvm-error="error.intermediate_college">
-                    </div>
-
-                    <div class="form-row">
-                        <div class="row">
-                            <div class="span3 form-split">
-                                <label kvm-error="error.intermediate_medium">Medium</label>
-                                <select ng-options="medium.id as medium.name for medium in mediums" ng-model="apply.intermediate_medium" kvm-error="error.intermediate_medium"></select>
-                            </div>
-
-                            <div class="span3 form-split">
-                                <label kvm-error="error.intermediate_marks">Percent of Marks Obtained</label>
-                                <div class="input-append">
-                                    <input type="text" class="span7" ng-model="apply.intermediate_marks" kvm-error="error.intermediate_marks">
-                                    <span class="add-on">%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="form-row">
-                        <div class="row">
-                            <div class="span3 form-split">
-                                <label kvm-error="error.intermediate_division">Division/Class/GPA</label>
-                                <select ng-options="division.id as division.name for division in divisions" ng-model="apply.intermediate_division" kvm-error="error.intermediate_division"></select>
-                            </div>
-
-                            <div class="span3 form-split">
-                                <label kvm-error="error.intermediate_passing">Year of Passing</label>
-                                <select ng-options="year for year in passingYears" ng-model="apply.intermediate_passing" kvm-error="error.intermediate_passing"></select>
-                            </div>
-                        </div>
-                    </div>
-
-                </fieldset>
-            </div>
-
-        </div>
-
-        <div class="row">
-            <div class="span6">
-                <fieldset>
-                    <legend class="sub">Degree College</legend>
-
-                    <div class="form-row">
-                        <label kvm-error="error.degree_subject">Subject</label>
-                        <select ng-options="subject.id as subject.name for subject in degreeSubjects" ng-model="apply.degree_subject" class="span6" kvm-error="error.degree_subject"></select>
-                    </div>
-
-                    <div class="form-row">
-                        <label kvm-error="error.degree_college">College Attended</label>
-                        <input type="text" class="span7" ng-model="apply.degree_college" kvm-error="error.degree_college">
-                    </div>
-
-                    <div class="form-row">
-                        <div class="row">
-                            <div class="span3 form-split">
-                                <label kvm-error="error.degree_medium">Medium</label>
-                                <select ng-options="medium.id as medium.name for medium in mediums" ng-model="apply.degree_medium" kvm-error="error.degree_medium"></select>
-                            </div>
-
-                            <div class="span3 form-split">
-                                <label kvm-error="error.degree_marks">Percent of Marks Obtained</label>
-                                <div class="input-append">
-                                    <input type="text" class="span7" ng-model="apply.degree_marks" kvm-error="error.degree_marks">
-                                    <span class="add-on">%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="form-row">
-                        <div class="row">
-                            <div class="span3 form-split">
-                                <label kvm-error="error.degree_division">Division/Class/GPA</label>
-                                <select ng-options="division.id as division.name for division in divisions" ng-model="apply.degree_division" kvm-error="error.degree_division"></select>
-                            </div>
-
-                            <div class="span3 form-split">
-                                <label kvm-error="error.degree_passing">Year of Passing</label>
-                                <select ng-options="year for year in passingYears" ng-model="apply.degree_passing" kvm-error="error.degree_passing"></select>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="form-row">
-                        <label kvm-error="error.degree_current_year">Current Year</label>
-                        <select ng-options="year.id as year.name for year in schoolYears" ng-model="apply.degree_current_year" kvm-error="error.degree_current_year"></select>
-                    </div>
-
-                </fieldset>
-            </div>
-
-            <div class="span6 offset1">
-                
-
-                <fieldset>
-                    <legend class="sub">Postgraduate Degree</legend>
-
-                    <div class="form-row">
-                        <label kvm-error="error.post_subject">Subject</label>
-                        <select ng-options="subject.id as subject.name for subject in postSubjects" ng-model="apply.post_subject" class="span6" kvm-error="error.post_subject"></select>
-                    </div>
-
-                    <div class="form-row">
-                        <label kvm-error="error.post_university">University Attended</label>
-                        <input type="text" class="span7" ng-model="apply.post_university" kvm-error="error.post_university">
-                    </div>
-
-                    <div class="form-row">
-                        <div class="row">
-                            <div class="span3 form-split">
-                                <label kvm-error="error.post_medium">Medium</label>
-                                <select ng-options="medium.id as medium.name for medium in mediums" ng-model="apply.post_medium" kvm-error="error.post_medium"></select>
-                            </div>
-
-                            <div class="span3 form-split">
-                                <label kvm-error="error.post_marks">Percent of Marks Obtained</label>
-                                <div class="input-append">
-                                    <input type="text" class="span7" ng-model="apply.post_marks" kvm-error="error.post_marks">
-                                    <span class="add-on">%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="form-row">
-                        <div class="row">
-                            <div class="span3 form-split">
-                                <label kvm-error="error.post_division">Division/Class/GPA</label>
-                                <select ng-options="division.id as division.name for division in divisions" ng-model="apply.post_division" kvm-error="error.post_division"></select>
-                            </div>
-
-                            <div class="span3 form-split">
-                                <label kvm-error="error.post_passing">Year of Passing</label>
-                                <select ng-options="year for year in passingYears" ng-model="apply.post_passing" kvm-error="error.post_passing"></select>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="form-row">
-                        <label kvm-error="error.post_current_year">Current Year</label>
-                        <select ng-options="year.id as year.name for year in schoolYears" ng-model="apply.post_current_year" kvm-error="error.post_current_year"></select>
-                    </div>
-
-                </fieldset>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="span12">
-                <fieldset>
-                    <label kvm-error="error.academic_distinction">Academic distinction <span class="label-details">(Eg. any prize, medal, award, extracurricular activities, etc.)</span></label>
-                    <textarea rows="3" class="span12" ng-model="apply.academic_distinction" kvm-error="error.academic_distinction"></textarea>
-                </fieldset>
+                <div class="form-row">
+                    <label kvm-error="error.institution_name">Name of Current Institution</label>
+                    <input type="text" class="span7" ng-model="apply.institution_name" kvm-error="error.institution_name">
+                </div>
             </div>
         </div>
 

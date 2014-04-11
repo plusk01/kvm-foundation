@@ -196,12 +196,16 @@ angular.module('kvmApply.controllers').controller('applicationCtrl', function($s
 	// model init
 	$scope.apply = {};
 
-	Restangular.all('degree-subjects').getList().then(function(data) {
-		$scope.degreeSubjects = data;
-	});
+	// Restangular.all('degree-subjects').getList().then(function(data) {
+	// 	$scope.degreeSubjects = data;
+	// });
 
-	Restangular.all('postgraduate-subjects').getList().then(function(data) {
-		$scope.postSubjects = data;
+	// Restangular.all('postgraduate-subjects').getList().then(function(data) {
+	// 	$scope.postSubjects = data;
+	// });
+
+	Restangular.all('degree-types').getList().then(function(data) {
+		$scope.degreeTypes = data;
 	});
 
 	Restangular.all('incomes').getList().then(function(data) {
