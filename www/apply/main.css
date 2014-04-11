@@ -49,8 +49,12 @@ input.span7 {
 	width: 440px;
 }
 
-textarea.span12 {
+/*textarea.span12 {
 	width: 1000px;
+}
+*/
+textarea.span6 {
+	font-size: 16px;
 }
 
 div.long-span12 {

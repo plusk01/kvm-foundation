@@ -186,6 +186,8 @@ angular.module('kvmApply.controllers').controller('applicationCtrl', function($s
 		{id: 'Y5', name: '5th Year'},
 	];
 
+	var other = {id: -1, name: "Other"};
+
 	var d = new Date();
 	$scope.years = getYears(1950, d.getFullYear() - 14);
 	$scope.days = getDays();
@@ -196,17 +198,27 @@ angular.module('kvmApply.controllers').controller('applicationCtrl', function($s
 	// model init
 	$scope.apply = {};
 
-	Restangular.all('degree-subjects').getList().then(function(data) {
-		$scope.degreeSubjects = data;
-	});
+	// Restangular.all('degree-subjects').getList().then(function(data) {
+	// 	$scope.degreeSubjects = data;
+	// });
 
-	Restangular.all('postgraduate-subjects').getList().then(function(data) {
-		$scope.postSubjects = data;
+	// Restangular.all('postgraduate-subjects').getList().then(function(data) {
+	// 	$scope.postSubjects = data;
+	// });
+
+	Restangular.all('degree-types').getList().then(function(data) {
+		$scope.degreeTypes = data;
+		$scope.degreeTypes.push(other);
 	});
 
 	Restangular.all('incomes').getList().then(function(data) {
 		$scope.incomeOptions = data;
 	});
+
+	$scope.isNotOther = true;
+	$scope.updateIsNotOther = function(x) {
+		$scope.isNotOther = (x !== other.id);
+	};
 
 	$scope.submitApplication = function() {
 		var application = $scope.apply;
@@ -214,8 +226,10 @@ angular.module('kvmApply.controllers').controller('applicationCtrl', function($s
 		/* Birthday format normalization */
 		application.birthday = getBirthday(application.birth_day, application.birth_month, application.birth_year);
 
-		/* position interpretation */
-
+		/* degree type prep */
+		if (application.current_degree === other.id) {
+			application.current_degree = null;
+		}
 
 
 		Restangular.all('applications').customPOST(application).then(function(data) {
