@@ -226,8 +226,10 @@ angular.module('kvmApply.controllers').controller('applicationCtrl', function($s
 		/* Birthday format normalization */
 		application.birthday = getBirthday(application.birth_day, application.birth_month, application.birth_year);
 
-		/* position interpretation */
-
+		/* degree type prep */
+		if (application.current_degree === other.id) {
+			application.current_degree = null;
+		}
 
 
 		Restangular.all('applications').customPOST(application).then(function(data) {
