@@ -186,6 +186,8 @@ angular.module('kvmApply.controllers').controller('applicationCtrl', function($s
 		{id: 'Y5', name: '5th Year'},
 	];
 
+	var other = {id: -1, name: "Other"};
+
 	var d = new Date();
 	$scope.years = getYears(1950, d.getFullYear() - 14);
 	$scope.days = getDays();
@@ -206,11 +208,17 @@ angular.module('kvmApply.controllers').controller('applicationCtrl', function($s
 
 	Restangular.all('degree-types').getList().then(function(data) {
 		$scope.degreeTypes = data;
+		$scope.degreeTypes.push(other);
 	});
 
 	Restangular.all('incomes').getList().then(function(data) {
 		$scope.incomeOptions = data;
 	});
+
+	$scope.isNotOther = true;
+	$scope.updateIsNotOther = function(x) {
+		$scope.isNotOther = (x !== other.id);
+	};
 
 	$scope.submitApplication = function() {
 		var application = $scope.apply;
