@@ -23,7 +23,10 @@
     <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
 
     <script type="text/javascript">
-      jQuery(window).load(resizings);
+      jQuery(window).load(function() {
+        resizings();
+        $("#sticky").fadeIn();
+      });
       jQuery(window).resize(resizings);
 
       function resizings() {
@@ -35,6 +38,10 @@
   </head>
 
   <body data-spy="scroll" data-offset="60" data-target=".navigation-scroll">
+
+  <div id="sticky" class="sticky-bottom-banner">
+    <span>Apply to the KVM Foundation English Institution <a href="/apply">HERE</a>.</span>
+  </div>
 
 <!-- site header -->
 <header class="homepage-banner">

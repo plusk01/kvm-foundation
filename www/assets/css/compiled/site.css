@@ -1,3 +1,20 @@
+.sticky-bottom-banner {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #24b476;
+  box-shadow: 0 -3px 10px;
+  font-size: 24px;
+  line-height: 30px;
+  height: 30px;
+  text-align: center;
+  display: none;
+}
+
+/*.sticky-bottom-banner a {
+  color: white;
+}*/
+
 /*!
  * Bootstrap v2.3.2
  *
