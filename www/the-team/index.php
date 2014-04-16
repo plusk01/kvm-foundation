@@ -26,6 +26,7 @@
   </head>
 
   <body class="darker">
+  <?php require_once('../donate.php'); ?>
     <div class="wrapper">
         <!-- site nav fixed -->
         <nav>
@@ -44,7 +45,7 @@
                     <li><a href="/index.php#thestory">The Story</a></li>
                     <li class="active"><a href="/the-team/">The Team</a></li>
                     <li><a href="/get-involved/" class="btn-green-basic">Get Involved</a></li>
-                    <li><a href="javascript:void(0)" class="btn-green-basic">Donate</a></li>
+                    <li><a href="javascript:void(0)" onclick="donate()" class="btn-green-basic">Donate</a></li>
                   </ul>
                 </div>
               </div>
