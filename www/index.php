@@ -160,7 +160,22 @@
         <div class="detail-content-container">
 
             <div class="content-body">
-                <p>Have you ever felt that stifling feeling of being completely helpless? How about being so terrified that the only thing you could do was cry? Have you ever felt the pains of a day empty stomach? Maybe you have felt so overwhelmed, or had so much to do that you instead just took a nap? Perhaps you even have felt the suppression of sexism, racism, status, or handicap? But what keeps us from being great? What keeps us from achieving our full potential?</p>
+
+              <p>If you make an annual salary of $35,000, you are in the top 0.81% richest people in the world by income. You have purpose, and you have potential. You have dreams.</p>
+               
+              <p>KVM Foundation exists to help young people fulfill their dreams and purpose.</p>
+               
+              <p>KVM is an acronym for 3 Telugu words: Kala, Vidaya, and Marindi.<br>Translated: Dream, Educate, and Change.</p>
+               
+              <p>KVM has 2 major focuses: teaching skills and job placement. We teach conversational English, self-reliance and recognizing options to students of higher education. Many students have proficiency in English grammar, sentence structure, and even have recognized degrees in their field. They can regurgitate information, sentences, and ideas they have been told, but cannot utilize the language to express themselves and their ideas.  We have created a replicable English model that will replace rote English to English understanding and fluency.</p>
+               
+              <p>After students complete the 6-month program, they will be eligible for job placement. We have contracted with several companies in Vishakhapatnam, India to hire graduates of our program. As KVM becomes more recognized both in the city and globally, we anticipate many companies who will look to our company for their staffing needs.</p>
+
+
+
+
+
+<!--                 <p>Have you ever felt that stifling feeling of being completely helpless? How about being so terrified that the only thing you could do was cry? Have you ever felt the pains of a day empty stomach? Maybe you have felt so overwhelmed, or had so much to do that you instead just took a nap? Perhaps you even have felt the suppression of sexism, racism, status, or handicap? But what keeps us from being great? What keeps us from achieving our full potential?</p>
 
                 <div class="quote-block">
                     <p class="quote">“Our deepest fear is not that we are inadequate. Our deepest fear is that we are powerful beyond measure. It is our light, not our darkness that most frightens us… Your playing small does not serve the world… And as we let our own light shine, we unconsciously give other people permission to do the same. As we are liberated from our own fear, our presence automatically liberates others.”</p>
@@ -174,7 +189,7 @@
 
                 <p>KVM has 2 major focuses. The first is the teaching of conversational English skills, self-reliance skills, realizing options and “dreaming skills”, to students of higher education. Many of the students we run across have great English grammar, sentence structure, and even have recognized degrees in their field. The problem is both pronunciation and communication of ideas. They can regurgitate information, sentences, and ideas they have been told, but cannot utilize the language to express themselves and their ideas. In collaboration with Layne Steinagel (the head of the language program at the MTC in Provo, Utah), we are in the process of creating a replicable English model that will replace rote English to English understanding and fluency. KVM’s goal is to not just assist our students, but also has a goal within the next 5 years to be in Vietnam, Cambodia and Peru as these are markets that have been identified as candidates of KVM’s program</p>
 
-                <p>After students complete the 6 month program, they will be eligible for the second arm of KVM which is job placement. We have contracted with several companies in Vishakhapatnam, India to hire graduates of our program. As KVM becomes more recognized both in the city and globally, we anticipate many companies who will look to our company for their staffing needs.</p>
+                <p>After students complete the 6 month program, they will be eligible for the second arm of KVM which is job placement. We have contracted with several companies in Vishakhapatnam, India to hire graduates of our program. As KVM becomes more recognized both in the city and globally, we anticipate many companies who will look to our company for their staffing needs.</p> -->
 
 
             </div>
@@ -271,7 +286,18 @@
         <div class="detail-content-container">
 
             <div class="content-body">
-                <p>In 2013 KVM was started in club house of a local apartment complex by 3 BYU students who wanted to do something: “to anxiously engage in a good cause”. It seems random right? Why India? Why education? And why are a bunch of underqualified students doing this? And you’d be right. Why?</p>
+              <p>KVM is a student founded and run 501c3.  It was seeded into the mind of Taylor Ottesen while on a research study abroad in India two years ago. Like many born and raised in the first world, the experience was enlightening and profoundly motivating.</p>
+ 
+              <p>After returning home from four months in the southeastern port city of Visakhapatnam, Taylor couldn’t let go of his feelings for the people he had left behind. A year later, Taylor formed a board and KVM was officially launched in the upstairs clubhouse room of his apartment building.</p>
+               
+              <p>Admittedly, we had no idea what we were doing as we founded KVM. One of the founding students was studying Neuroscience at BYU and the other Marketing, with little or no knowledge of what organizing a foundation of this magnitude entailed. With lots of prayer and help from around the globe, KVM has grown in size and influence and remains a force for good. Over the last ten months, 9 additional students from 3 different universities and a few professionals scattered across the globe have joined us in this endeavor, as we hope you will as well.</p>
+               
+              <p>In June 2014 we will open our first school with our first class of students, and look forward to a second class starting at the end of 2014. We as KVM want to be the change that we want to see in the world. Welcome aboard.</p>
+
+
+
+
+<!--                 <p>In 2013 KVM was started in club house of a local apartment complex by 3 BYU students who wanted to do something: “to anxiously engage in a good cause”. It seems random right? Why India? Why education? And why are a bunch of underqualified students doing this? And you’d be right. Why?</p>
 
                 <p>We all have life changing experiences. Those experiences range widely, but they cannot be ignored. KVM was born into the mind of a young American while on a research study abroad in India two years ago. Like many born and raised in the first world, the experience was enlightening and profoundly motivating.</p>
 
@@ -285,7 +311,7 @@
 
                 <p>KVM’s timeline for the upcoming year includes some exciting and revolutionizing changes in the English teaching world. In June of this year we will be opening our first school with our first class of students beginning mid-June. The curriculum is a 6 month course, thus our first wave of graduates are expected in November of the same year. Another exciting program we will institute in June is our Google Hangout Lab. As part of the curriculum, KVM students will be required to talk with a native English speaker for 30 minutes daily. This is a great opportunity for students in the states to make a substantial difference in the lives of these people with a very small time commitment. KVM Students will be paired with 1-2 local students to “hang out” on a regular basis. Volunteers will be given a very basic curriculum in which they will practice basic English pronunciation. Most of all, this is meant to be a bonding experience. Local university students and KVM students alike will be able to make lasting friendships through these “pen pals” of the 21st century. Volunteers can break the cycle of poverty, by simply making friends and communicating often with their respective KVM student.</p>
 
-                <p>Whether that is interning for KVM in India, donating, or being a teacher, we can all do our part. We are excited to have you aboard! We welcome you to KVM Foundation.</p>
+                <p>Whether that is interning for KVM in India, donating, or being a teacher, we can all do our part. We are excited to have you aboard! We welcome you to KVM Foundation.</p> -->
             </div>
         </div>
     </div>
