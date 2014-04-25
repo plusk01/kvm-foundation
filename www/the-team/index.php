@@ -59,16 +59,16 @@
         <!-- MEET THE TEAM -->
 <div id="theteam" class="meetteam">
 
-  <header class="team-banner">
+<!--   <header class="team-banner">
       <div class="header-container">
         <div class="header-title">
-          <!-- <h1>Meet the team</h1> -->
+          <h1>Meet the team</h1>
         </div>
         <div class="header-content">
 
         </div>
       </div>
-    </header>
+    </header> -->
 
 
 
