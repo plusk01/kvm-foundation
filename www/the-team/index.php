@@ -181,6 +181,19 @@
 
             <div class="row row-member">
                 <div class="span4">
+                    <img src="../img/team/tyler.png" class="img-circle" />
+                </div>
+                <div class="span7 offset1">
+                    <h2>TYLER COONS</h2>
+                    <p>
+                        Tyler is a student at Brigham Young University majoring in Psychology. He grew up in Southern California and enjoys spending his time outdoors. He enjoys sports, hiking, shooting, camping, and traveling. He has been doing volunteer work from a young age, and achieved the rank of Eagle Scout in the Boy Scouts of America. He became aware of the extreme poverty that exists in the world during his two year mission for the Church of Jesus Christ of  Latter-day Saints in Lima, Peru. Since his time in Peru Tyler has looked for ways to help those in poverty, and is a firm believer that education is the best way to do that.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="row row-member">
+                <div class="span4">
                     <img src="../img/team/dave.png" class="img-circle" />
                 </div>
                 <div class="span7 offset1">
