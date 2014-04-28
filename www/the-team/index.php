@@ -181,6 +181,19 @@
 
             <div class="row row-member">
                 <div class="span4">
+                    <img src="../img/team/ailyn.png" class="img-circle" />
+                </div>
+                <div class="span7 offset1">
+                    <h2>AILYN CABEZAS</h2>
+                    <p>
+                        Ailyn is a student at Brigham Young University studying Public Health with a minor in Business Management. She loves social innovation and works with the International Missionary Training Center Department to help missionaries in Spanish-speaking countries learn English. Being born in Chile, she understands the importance of education and has seen the impact that it has in others’ lives as well as her own. She has had the opportunity to volunteer in elementary schools and work with kids, which she truly enjoys. Ailyn loves the ocean, caramel apples, and spending time with her family in California.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="row row-member">
+                <div class="span4">
                     <img src="../img/team/tyler.png" class="img-circle" />
                 </div>
                 <div class="span7 offset1">
