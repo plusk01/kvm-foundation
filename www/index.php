@@ -41,9 +41,9 @@
 
   <?php require_once('donate.php'); ?>
 
-  <div id="sticky" class="sticky-bottom-banner">
+<!--   <div id="sticky" class="sticky-bottom-banner">
     <span>Apply to the KVM Foundation English Institution <a href="/apply">HERE</a>.</span>
-  </div>
+  </div> -->
 
 <!-- site header -->
 <header class="homepage-banner">
