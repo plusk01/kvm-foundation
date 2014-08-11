@@ -41,9 +41,10 @@
 
   <?php require_once('donate.php'); ?>
 
-<!--   <div id="sticky" class="sticky-bottom-banner">
-    <span>Apply to the KVM Foundation English Institution <a href="/apply">HERE</a>.</span>
-  </div> -->
+  <div id="sticky" class="sticky-bottom-banner">
+    <span>Applications for our next group of students will open on October 1, 2014.</span>
+    <!-- <span>Apply to the KVM Foundation English Institution <a href="/apply">HERE</a>.</span> -->
+  </div>
 
 <!-- site header -->
 <header class="homepage-banner">
