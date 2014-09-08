@@ -1,2 +1,3 @@
 www/apply/js/c.js
 cgi-bin/
+*.sublime-workspace
