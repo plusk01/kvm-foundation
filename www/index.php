@@ -165,7 +165,7 @@
                
               <p>KVM Foundation exists to help young people fulfill their dreams and purpose.</p>
                
-              <p>KVM is an acronym for 3 Telugu words: Kala, Vidaya, and Marindi.<br>Translated, this means: dream, educate, and change.</p>
+              <p>KVM is an acronym for 3 Telugu words: Kala, Vidya, and Marpu.<br>Translated, this means: dream, educate, and change.</p>
 
               <p>Our vision is to create a stable model to assist these students to gain both the necessary skills and vision.</p>
                
@@ -210,7 +210,7 @@
         </div>
         <div class="span4 content-box">
           <h3 class="text-center">Educate</h3>
-          <p class="text-justify">Needed essentials of clothes and hygiene kits “feed [people] for a day.” However, research shows that "giving" things away in developing countries as an act of humanitarian relief backfires&mdash;unless education is involved. Communities quickly get used to these "free" gifts and simply wait for the next batch to come. At KVM, education is earned; students who are qualified for the program and are required to invest significant time and effort for this education. This includes giving back to the community through service projects they plan and carry out themselves. Parallel to our English curriculum, students are taught life lesson exercises that enable them to see options in their lives with which they can construct their own future.</p>
+          <p class="text-justify">Needed essentials of clothes and hygiene kits “feed [people] for a day.” However, research shows that "giving" things away in developing countries as an act of humanitarian relief backfires&mdash;unless education is involved. Communities quickly get used to these "free" gifts and simply wait for the next group to come. At KVM, education is earned; students who are qualified for the program and are required to invest significant time and effort for this education. This includes giving back to the community through service projects they plan and carry out themselves. Parallel to our English curriculum, students are taught life lesson exercises that enable them to see options in their lives with which they can construct their own future.</p>
         </div>
         <div class="span4 content-box">
           <h3 class="text-center">Change</h3>
